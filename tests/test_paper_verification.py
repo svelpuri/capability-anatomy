@@ -61,8 +61,9 @@ module.main()
     return output
 
 
-def test_roundoff_changed_bootstrap_passes_numerical_verification(bootstrap_reproduction, tmp_path):
+def test_roundoff_changed_bootstrap_passes_numerical_verification(bootstrap_reproduction, tmp_path, monkeypatch):
     import numpy as np
+    monkeypatch.setenv('PYTHONOPTIMIZE', '1')
     output = tmp_path / 'reproduction'
     shutil.copytree(bootstrap_reproduction, output)
     path = output / 'residual_bootstrap.npz'
@@ -78,8 +79,10 @@ def test_roundoff_changed_bootstrap_passes_numerical_verification(bootstrap_repr
 
 
 @pytest.mark.parametrize('key', ['residuals', 'maximum_standardized_deviation'])
-def test_numerically_changed_bootstrap_is_rejected(bootstrap_reproduction, tmp_path, key):
+@pytest.mark.parametrize('optimization', ['0', '1'])
+def test_numerically_changed_bootstrap_is_rejected(bootstrap_reproduction, tmp_path, key, optimization, monkeypatch):
     import numpy as np
+    monkeypatch.setenv('PYTHONOPTIMIZE', optimization)
     output = tmp_path / 'reproduction'
     shutil.copytree(bootstrap_reproduction, output)
     path = output / 'residual_bootstrap.npz'

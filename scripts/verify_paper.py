@@ -83,7 +83,7 @@ def verify_bootstrap(root, reproduced):
     with tempfile.TemporaryDirectory(prefix='paper-bootstrap-') as directory:
         output = Path(directory) / 'verification.json'
         result = subprocess.run(
-            [sys.executable, str(root / 'analysis/verify_bootstrap.py'),
+            [sys.executable, '-I', str(root / 'analysis/verify_bootstrap.py'),
              '--analysis', str(reproduced), '--output', str(output)],
             capture_output=True, text=True, check=False,
         )
