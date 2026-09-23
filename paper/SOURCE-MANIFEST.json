@@ -4,12 +4,6 @@
   "archive_sha256": "9d46c62f8fe759d81f54ba65f05c529a0fe588b358ddd985fa895bfe84579d4c",
   "files": [
     {
-      "path": "ARXIV_SUBMISSION_NOTES.txt",
-      "bytes": 1595,
-      "sha256": "214262ab99e29bf7753e529f5edd8e79c13cc6df600c0bebd52243908288b7ad",
-      "transformation": "none"
-    },
-    {
       "path": "main.tex",
       "bytes": 22894,
       "sha256": "cec5845d6f15c13b03f6400d050989b44891a9dfa48deb0571e81e1195d49622",
@@ -48,5 +42,13 @@
   ],
   "references": "Manual thebibliography environment retained byte-for-byte in main.tex; no BibTeX conversion.",
   "reference_pdf_in_archive": false,
-  "scope": "Exact import; not a scientific or bibliographic fact-check."
+  "scope": "Byte-exact manuscript and figure selection from the authoritative archive; obsolete internal submission notes excluded. Not a scientific or bibliographic fact-check.",
+  "excluded_files": [
+    {
+      "path": "ARXIV_SUBMISSION_NOTES.txt",
+      "bytes": 1595,
+      "sha256": "214262ab99e29bf7753e529f5edd8e79c13cc6df600c0bebd52243908288b7ad",
+      "reason": "Obsolete internal author-check instructions; not required for manuscript compilation or numerical reproduction."
+    }
+  ]
 }

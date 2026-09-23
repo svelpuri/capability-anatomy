@@ -1,8 +1,8 @@
 # Public research snapshot audit
 
 **Status: manuscript imported unchanged; repository remains private pending final release review.**
-The authoritative archive supplies LaTeX with manual references, five PNG
-figures/diagrams and submission notes. Each file is preserved byte-for-byte;
+The selected authoritative archive contents are LaTeX with manual references
+and five PNG figures/diagrams. These six files are preserved byte-for-byte;
 no separate bibliography file is required. Compilation and hosted checks are
 tracked separately from source preservation.
 The `v0.1.0-paper` tag has not been created.
@@ -13,13 +13,16 @@ The `v0.1.0-paper` tag has not been created.
 - Files included: curated research software and tests; 32 unchanged selected
   evidence files plus two public manifests; portable specificity and split-half
   analysis; expected numerical results; four SVG/PNG figure pairs; researcher
-  documentation; the seven unchanged manuscript source files and their import
+  documentation; the six unchanged manuscript/figure files and their selection
   manifest. The final inventory is `PUBLIC-MANIFEST.json`.
 - Files intentionally excluded: unrelated platform source/product documents,
   old experiment families, benchmark text/raw answers, model weights, task
   caches, research/release traces not needed for numerical reproduction,
   original private review manifests and preservation archive, machine inventories,
-  session material, temporary images/draft PDF, redundant bootstrap NPZ.
+  session material, temporary images/draft PDF, redundant bootstrap NPZ, and
+  obsolete internal `paper/ARXIV_SUBMISSION_NOTES.txt`. The omitted notes are
+  unnecessary for compilation/reproduction and conflict with finalized author
+  metadata. Their original archive hash is retained in `paper/SOURCE-MANIFEST.json`.
 - Secret scan: Gitleaks 8.30.1 returned 202 candidates (exit 1): 200 record-group hashes and two deliberate negative-test fixtures. TruffleHog 3.97.6 returned one candidate (exit 0), exactly a recomputed source-file SHA-256. All are explicitly dispositioned as nonsecrets in `provenance/secret-scan.json`; zero unresolved or real-secret findings. Candidate network verification was disabled; no credentials were sent to providers. No detector suppressions were used.
 - License scan: Apache-2.0 project LICENSE/NOTICE/metadata retained. Dataset
   provenance inspected against pinned upstream licenses. WikiText's pinned
@@ -39,8 +42,7 @@ The `v0.1.0-paper` tag has not been created.
   discovery reuse, no validation interventions, duplicated 1.7B binding/full-call
   outcomes, no one-command historical inference replay. The manuscript also retains
   a historical aggregate Phase0B paragraph whose inputs are outside the primary
-  Phase5 reproduction. Original submission notes contain an older affiliation
-  instruction; see `paper/README.md`.
+  Phase5 reproduction. See `paper/README.md` for the manuscript selection scope.
 
 No private monorepo Git history is included.
 
@@ -71,11 +73,14 @@ signature or certification of historical execution. Numerical scripts emit
 verification JSON; they are not claimed to be OTel-instrumented services.
 Runtime telemetry is verified through the real collector gate.
 
-Hosted Linux/macOS CI may still be running on the draft PR; local macOS gate
-results do not constitute a hosted Linux pass. The workflow now includes a
-paper job for integrity, numerical reproduction and two-pass pdflatex compilation
-with shell escape disabled. Any unfinished hosted checks remain visible release
-limitations.
+At `b7203294ca82255729b40832095f34f9f125427b`, independent clean-checkout
+suites passed 647 tests in normal order and 647 in reverse order, zero skips.
+Hosted paper, Ubuntu acceptance and macOS acceptance jobs all passed in
+[workflow run 35867548935](https://github.com/svelpuri/capability-anatomy/actions/runs/35867548935).
+The paper job checks integrity, numerical reproduction and two-pass pdflatex
+compilation with shell escape disabled. The submission-notes cleanup reruns these
+checks; its current result is tracked on the PR rather than inferred from the
+previous commit.
 
 The first hosted paper run exposed R-CI-01: an architecture-specific bootstrap
 binary hash was incorrectly required for numerical reproduction. Downloaded

@@ -5,12 +5,12 @@
 Srinivas Velpuri · Andyur AI · svelpuri@andyur.ai
 ORCID: https://orcid.org/0009-0005-8111-2622
 
-[main.tex](main.tex), all five referenced PNG figures/diagrams, and
-[ARXIV_SUBMISSION_NOTES.txt](ARXIV_SUBMISSION_NOTES.txt) are imported byte-for-byte
+[main.tex](main.tex) and all five referenced PNG figures/diagrams are imported byte-for-byte
 from the author-supplied `Layerwise_Behavioral_Sensitivity_LLMs_arXiv_candidate_source.tar.gz`.
 Archive SHA-256: `9d46c62f8fe759d81f54ba65f05c529a0fe588b358ddd985fa895bfe84579d4c`.
 [SOURCE-MANIFEST.json](SOURCE-MANIFEST.json) records each original file's size and
-SHA-256. Scientific claims, figure contents, and references are unchanged.
+SHA-256, including the excluded archive member. Scientific claims, figure contents,
+and references are unchanged.
 
 The bibliography is the manual `thebibliography` environment in `main.tex`.
 No separate `.bib` file or BibTeX run is required. The archive has no compiled
@@ -39,10 +39,11 @@ tectonic --untrusted --keep-logs --outdir .reproduction/paper paper/main.tex
 
 ## Preservation notes
 
-The original submission notes still mention “Independent Researcher” and an
-email/ORCID decision; `main.tex` already contains Andyur AI, the public email and
-ORCID above. Both supplied files are preserved exactly. The notes describe an
-author check, not evidence that an arXiv submission has occurred.
+The archive’s internal `ARXIV_SUBMISSION_NOTES.txt` is excluded from this snapshot
+because its obsolete author-check instructions conflict with the finalized author
+metadata above. It is unnecessary for compilation or numerical reproduction.
+The authoritative archive is unchanged; its omitted member’s original hash and
+the exclusion reason are recorded in `SOURCE-MANIFEST.json`.
 
 The five manuscript PNGs are the supplied publication assets. The four analysis
 figure pairs in `../figures/` are separate reproducible analysis outputs; they
