@@ -21,10 +21,15 @@ contract tests are not imported by the paper analyses.
    R² values, three cross-size correlations, and split-half distributions.
 
 Expected outputs are in `analysis/`. The redundant bootstrap NPZ is omitted;
-`analysis/bootstrap.json` records its expected SHA-256. Exact byte equality was
+`analysis/bootstrap.json` records its historical SHA-256. Exact byte equality was
 verified on the recorded Python/NumPy environment. Small floating-point
 variation across architectures is assessed with a 1e-10 numerical tolerance;
-this does not relax any discrete layer-set check. PNG/SVG figures regenerate
+this does not relax any discrete layer-set check. The final verifier also invokes
+the independent bootstrap check (all 336 bands, maximum deviations and scalar
+first-draw reconstruction) and reports compressed-file hash equality separately.
+Linux/macOS floating-point differences can change that hash while the numerical
+checks pass. The retained source/evidence hashes still require exact equality.
+PNG/SVG figures regenerate
 from the same numbers; fonts and rendering libraries may affect figure bytes.
 SVG dates are suppressed to avoid embedding execution timestamps.
 

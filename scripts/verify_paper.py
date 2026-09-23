@@ -7,6 +7,9 @@ import hashlib
 import json
 import math
 from pathlib import Path
+import subprocess
+import sys
+import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
 MODELS = ('0.6', '1.7')
@@ -75,8 +78,27 @@ def verify_snapshot(root):
     return len(names)
 
 
+def verify_bootstrap(root, reproduced):
+    """Validate regenerated numbers; the historical compressed hash is provenance."""
+    with tempfile.TemporaryDirectory(prefix='paper-bootstrap-') as directory:
+        output = Path(directory) / 'verification.json'
+        result = subprocess.run(
+            [sys.executable, str(root / 'analysis/verify_bootstrap.py'),
+             '--analysis', str(reproduced), '--output', str(output)],
+            capture_output=True, text=True, check=False,
+        )
+        require(result.returncode == 0,
+                'bootstrap numerical verification failed: ' + result.stderr.strip())
+        require(read(output)['status'] == 'passed', 'bootstrap verification incomplete')
+    reference = read(root / 'analysis/bootstrap.json')
+    digest = hashlib.sha256((reproduced / reference['filename']).read_bytes()).hexdigest()
+    return {'numerical_verification': 'passed', 'sha256': digest,
+            'historical_sha256_match': digest == reference['sha256']}
+
+
 def verify(root=ROOT, reproduced=None, splits=None):
     snapshot_files = verify_snapshot(root)
+    bootstrap_verification = None
     files = observations = 0
     for model in MODELS:
         bundle = root / 'artifacts' / f'qwen3-{model}b'
@@ -124,9 +146,7 @@ def verify(root=ROOT, reproduced=None, splits=None):
             reference.pop(name, None); generated.pop(name, None)
         compare(reference, generated, 'results')
         compare(read(analysis / 'verification.json'), read(reproduced / 'verification.json'), 'verification')
-        bootstrap = read(analysis / 'bootstrap.json')
-        payload = (reproduced / bootstrap['filename']).read_bytes()
-        require(hashlib.sha256(payload).hexdigest() == bootstrap['sha256'], 'bootstrap binary hash mismatch')
+        bootstrap_verification = verify_bootstrap(root, reproduced)
         for stem in ('qwen_0_6b_specificity', 'qwen_1_7b_specificity', 'raw_vs_log_sensitivity', 'cross_size_residuals'):
             for suffix in ('.svg', '.png'):
                 require((reproduced / (stem + suffix)).stat().st_size > 1000, 'figure missing')
@@ -135,6 +155,7 @@ def verify(root=ROOT, reproduced=None, splits=None):
     return {'status': 'passed', 'snapshot_files': snapshot_files, 'artifact_files': files, 'observations': observations,
             'headline_sets': SETS, 'analysis_reproduced': reproduced is not None,
             'split_half_reproduced': splits is not None,
+            'bootstrap': bootstrap_verification,
             'scope': 'Retained artifact integrity and numerical reproduction, not new inference or historical execution certification.'}
 
 

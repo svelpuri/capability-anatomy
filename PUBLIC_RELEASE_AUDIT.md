@@ -76,3 +76,11 @@ results do not constitute a hosted Linux pass. The workflow now includes a
 paper job for integrity, numerical reproduction and two-pass pdflatex compilation
 with shell escape disabled. Any unfinished hosted checks remain visible release
 limitations.
+
+The first hosted paper run exposed R-CI-01: an architecture-specific bootstrap
+binary hash was incorrectly required for numerical reproduction. Downloaded
+Linux versus macOS arrays differed by at most 4.44e-16. The verifier now runs the
+existing independent numerical bootstrap checks and reports historical hash
+equality separately. Regression tests accept single-ULP roundoff and reject
+changed residuals and maximum deviations. Manuscript and analysis algorithms
+are unchanged.

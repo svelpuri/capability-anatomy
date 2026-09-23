@@ -49,8 +49,8 @@
     },
     {
       "path": "PUBLIC_RELEASE_AUDIT.md",
-      "bytes": 6001,
-      "sha256": "c995935503ac78c3b32f5c4e28735726fc72279a14061e89deb2dfb41b060456"
+      "bytes": 6483,
+      "sha256": "e6cd034153462a725dcdc8706c44b5efdb07d748f3e5cff734aa8efbd99573a1"
     },
     {
       "path": "README.md",
@@ -59,8 +59,8 @@
     },
     {
       "path": "REPRODUCIBILITY.md",
-      "bytes": 4323,
-      "sha256": "8d0aa7d5ae29e985417be05720c32e449f04fe49978f78960fb7111e2aa29ddf"
+      "bytes": 4675,
+      "sha256": "1c0c02e3684ff248fa965676a72fa5af4ecd56ac24483fabb3637e729d3b6e37"
     },
     {
       "path": "SECURITY.md",
@@ -559,8 +559,8 @@
     },
     {
       "path": "scripts/verify_paper.py",
-      "bytes": 7516,
-      "sha256": "b1531ac7f9be76407f704e43d2ef0b27de6d13de44ee2a818a9651d70161b7fa"
+      "bytes": 8480,
+      "sha256": "9f7d38602de6f5872fb7453e3a8742ef6e1e0198ed00a8574ea91e9e0be4fd69"
     },
     {
       "path": "scripts/verify_release.py",
@@ -839,8 +839,8 @@
     },
     {
       "path": "tests/test_paper_verification.py",
-      "bytes": 1367,
-      "sha256": "e76b30428b112b61df1d19af77d460a89062246d902306c1dbeb534623fb5aff"
+      "bytes": 3822,
+      "sha256": "7ea8e5011a78dec3487ebba2d85dfa15bb3723e2c0eb921dacbffbed76bb27c2"
     },
     {
       "path": "tests/test_release_cli.py",
