@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "platform": "macOS arm64",
+  "source_tests": {
+    "normal": 640,
+    "reverse": 640,
+    "skips": 0
+  },
+  "sdist_tests": {
+    "normal": 640,
+    "reverse": 640,
+    "skips": 0
+  },
+  "wheel_lifecycle": "install, doctor, example, run, verify, report, resume, uninstall, reinstall, verify, environment removal",
+  "evidence_unchanged_by_resume_uninstall_reinstall": true,
+  "collector": {
+    "version": "0.160.0",
+    "receipt_spans": 104,
+    "source_export_decisions": 2,
+    "required_signals_received": true,
+    "exit": 0,
+    "independent_reviewer_readback": true
+  },
+  "software_selection_sha256": "129a56b63313d7f1446ebe5d85ac0b3c58245ac6495c5ad17e68f39f92bfc7b1",
+  "built_artifact_sha256": {
+    "capability_anatomy-0.1.0-py3-none-any.whl": "b83a7009295136c10fa7be5049dd92c3372cfb482177971599fb184c8f620df3",
+    "capability_anatomy-0.1.0.tar.gz": "12d903bc83a25d5cfe577abb25dc3e44c821a5c8693d5a9cb53b91d48ce56133"
+  },
+  "research_snapshot_test_count_before_final_regression": 640,
+  "limitations": [
+    "software distributions intentionally omit research data/analysis",
+    "does not certify fresh model inference",
+    "authoritative manuscript source missing"
+  ],
+  "research_snapshot_tests": {
+    "normal": 642,
+    "reverse": 642,
+    "skips": 0,
+    "clean_detached_checkout": true,
+    "independent_review": true
+  },
+  "paper_verifier_regression": {
+    "finding": "R-PUB-01",
+    "status": "closed",
+    "exact_inventory_check_removal_mutant": "killed",
+    "restored_positive": "passed"
+  }
+}

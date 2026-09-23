@@ -1,0 +1,33 @@
+{
+  "$id": "https://capability-anatomy.org/schemas/metric-result.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "aggregation_version": {"minLength": 1, "type": "string"},
+    "direction": {"enum": ["higher_is_better", "lower_is_better"], "type": "string"},
+    "distribution": {"additionalProperties": {"type": "number"}, "type": "object"},
+    "fraction": {
+      "additionalProperties": false,
+      "properties": {
+        "denominator": {"exclusiveMinimum": 0, "type": "integer"},
+        "numerator": {"minimum": 0, "type": "number"}
+      },
+      "required": ["numerator", "denominator"],
+      "type": "object"
+    },
+    "metric_id": {"minLength": 1, "type": "string"},
+    "sample_count": {"minimum": 0, "type": "integer"},
+    "status": {"enum": ["complete", "error", "missing", "skipped"], "type": "string"},
+    "uncertainty": {"type": "object"},
+    "unit": {"minLength": 1, "type": "string"},
+    "value": {"type": "number"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"status": {"const": "complete"}}, "required": ["status"]},
+      "then": {"required": ["value"]}
+    }
+  ],
+  "required": ["metric_id", "aggregation_version", "direction", "unit", "status"],
+  "type": "object"
+}

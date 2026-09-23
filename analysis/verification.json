@@ -1,0 +1,13 @@
+{
+  "source_files_checked": 34,
+  "source_unchanged": true,
+  "model_libraries_loaded": [],
+  "ols_matches_independent_lstsq": true,
+  "historical_damage_matches": true,
+  "deterministic_repetitions_collapsed": true,
+  "unique_tool_items": 20,
+  "unique_perplexity_documents": 5,
+  "regression_control": "T=2+3G exact fit",
+  "rank_control": "ties average",
+  "isotonic_control": "[0,2,1] -> [0,1.5,1.5]"
+}

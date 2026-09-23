@@ -1,0 +1,37 @@
+schema_version: capability-anatomy/experiment-config/v1
+experiment:
+  id: synthetic-component-scan
+  seed: 20260903
+model:
+  plugin: builtin.synthetic-model
+  source: fixtures/synthetic/model
+  revision: fixture-v1
+  parameters:
+    representation: scalar
+runtime:
+  executor: builtin.local
+  deterministic: true
+  warmup_runs: 1
+  randomized_execution_order: true
+  repetitions: 1
+  parameters: {}
+capability:
+  evaluation_plugin: reference.synthetic-exact-match
+  suite_version: "1"
+  target_metrics: [exact_match]
+  collateral_metrics: []
+dataset:
+  provider: reference.synthetic-dataset
+  manifest: ../../fixtures/synthetic/manifest.json
+  discovery_partition: discovery
+  validation_partition: validation
+intervention:
+  plugin: builtin.synthetic-intervention
+  parameters:
+    component_ids: all
+policy: {}
+output:
+  directory: ../../runs/synthetic-component-scan
+  retain_prompts: false
+  retain_raw_outputs: true
+  prompt_storage: hash_only

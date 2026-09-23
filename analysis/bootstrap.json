@@ -1,0 +1,8 @@
+{
+  "regenerate": "uv run --group analysis python analysis/specificity_analysis.py --output .reproduction/specificity",
+  "filename": "residual_bootstrap.npz",
+  "sha256": "a68048c9875ae4a11e23baf791d5134dfa2b30d2626e37b1644e1fb8660256d7",
+  "bytes": 20301400,
+  "included": false,
+  "reason": "Deterministically regenerated in seconds from retained observations; avoids a redundant binary artifact."
+}

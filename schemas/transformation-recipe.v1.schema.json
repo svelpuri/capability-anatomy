@@ -1,0 +1,47 @@
+{
+  "$id": "https://capability-anatomy.org/schemas/transformation-recipe.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$defs": {
+    "artifact": {
+      "additionalProperties": false,
+      "properties": {
+        "digest": {"pattern": "^sha256:[0-9a-f]{64}$", "type": "string"},
+        "uri": {"minLength": 1, "type": "string"}
+      },
+      "required": ["uri", "digest"],
+      "type": "object"
+    }
+  },
+  "additionalProperties": false,
+  "properties": {
+    "component_changes": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "change": {"minLength": 1, "type": "string"},
+          "component_id": {"minLength": 1, "type": "string"},
+          "details": {"type": "object"}
+        },
+        "required": ["component_id", "change", "details"],
+        "type": "object"
+      },
+      "type": "array"
+    },
+    "input_artifacts": {"items": {"$ref": "#/$defs/artifact"}, "minItems": 1, "type": "array"},
+    "output_artifacts": {"items": {"$ref": "#/$defs/artifact"}, "type": "array"},
+    "parameters": {"type": "object"},
+    "plugin": {
+      "additionalProperties": false,
+      "properties": {
+        "api_version": {"const": "capability-anatomy/plugin-api/v1"},
+        "name": {"minLength": 1, "type": "string"},
+        "version": {"minLength": 1, "type": "string"}
+      },
+      "required": ["name", "version", "api_version"],
+      "type": "object"
+    },
+    "schema_version": {"const": "capability-anatomy/transformation-recipe/v1"}
+  },
+  "required": ["schema_version", "plugin", "parameters", "input_artifacts", "output_artifacts", "component_changes"],
+  "type": "object"
+}

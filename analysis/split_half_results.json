@@ -1,0 +1,5633 @@
+{
+  "analysis_status": "post_hoc_exploratory_not_a_frozen_gate",
+  "resamples": 1000,
+  "seed": 20260916,
+  "rank_ties": "average rank; absolute tolerance 1e-12 for float residue",
+  "top5": "all ties at fifth position included; set size may exceed five",
+  "sources": {
+    "qwen3-0.6b/observations.jsonl": {
+      "bytes": 2696028,
+      "sha256": "bbeaf975e8f9fd8bab9c72e7c6c61ab3ef18f212c279350853c2b62ac45be3e9"
+    },
+    "qwen3-0.6b/report.json": {
+      "bytes": 120719,
+      "sha256": "8df2f365f018e337e5279967addd50cbf96eadace43d992d46439e06c3c8a86c"
+    },
+    "qwen3-0.6b/metrics.json": {
+      "bytes": 160863,
+      "sha256": "276cb5f48f458e7d3040e8fcec8be06dbd748dc6a0bceee35b28cb7db7de5cfe"
+    },
+    "qwen3-0.6b/protocol.json": {
+      "bytes": 5950,
+      "sha256": "ba4d72cdbdacc93132ab57c38bf41bbbd6d6aeec939ad97d8565ba800de548e3"
+    },
+    "qwen3-1.7b/observations.jsonl": {
+      "bytes": 2699218,
+      "sha256": "d63eaccb864c70c599e4a91a0be31cf775700c6085df2548b175cd3f8c371443"
+    },
+    "qwen3-1.7b/report.json": {
+      "bytes": 121474,
+      "sha256": "f87df57855e7c29e33ceb88765ee95ef04a23cfd6aa719d313b93824c4bcdfbd"
+    },
+    "qwen3-1.7b/metrics.json": {
+      "bytes": 162326,
+      "sha256": "827790fe9f1288883f7490041e6350654f89fb016aa706ec7afad10aeb7e5e12"
+    },
+    "qwen3-1.7b/protocol.json": {
+      "bytes": 5950,
+      "sha256": "54e101e4ba3fd3db575fa61ec20ff5d8829c5fa2939d4337b6ab4c05ef1f9304"
+    }
+  },
+  "phase5": {
+    "0.6": {
+      "observations": 3400,
+      "status_counts": {
+        "complete": 3400
+      },
+      "condition_counts": {
+        "baseline.beginning": 100,
+        "baseline.end": 100,
+        "baseline.middle": 100,
+        "control.no-op": 100,
+        "control.random.transformer.block.018": 100,
+        "scan.transformer.block.000": 100,
+        "scan.transformer.block.001": 100,
+        "scan.transformer.block.002": 100,
+        "scan.transformer.block.003": 100,
+        "scan.transformer.block.004": 100,
+        "scan.transformer.block.005": 100,
+        "scan.transformer.block.006": 100,
+        "scan.transformer.block.007": 100,
+        "scan.transformer.block.008": 100,
+        "scan.transformer.block.009": 100,
+        "scan.transformer.block.010": 100,
+        "scan.transformer.block.011": 100,
+        "scan.transformer.block.012": 100,
+        "scan.transformer.block.013": 100,
+        "scan.transformer.block.014": 100,
+        "scan.transformer.block.015": 100,
+        "scan.transformer.block.016": 100,
+        "scan.transformer.block.017": 100,
+        "scan.transformer.block.018": 100,
+        "scan.transformer.block.019": 100,
+        "scan.transformer.block.020": 100,
+        "scan.transformer.block.021": 100,
+        "scan.transformer.block.022": 100,
+        "scan.transformer.block.023": 100,
+        "scan.transformer.block.024": 100,
+        "scan.transformer.block.025": 100,
+        "scan.transformer.block.026": 100,
+        "scan.transformer.block.027": 100,
+        "validation.baseline": 100
+      },
+      "unique_examples_by_partition": {
+        "discovery": 50,
+        "validation": 50
+      },
+      "classification_counts": {
+        "broadly_sensitive": 23,
+        "target_sensitive": 5
+      },
+      "candidates": [],
+      "repeated_rows": {
+        "pairs": 1700,
+        "nonidentical_output_hash_pairs": 0,
+        "nonidentical_score_pairs": 0
+      },
+      "baseline_metrics": {
+        "tool_selection": {
+          "discovery": 0.8,
+          "validation": 0.65,
+          "absolute_gap": 0.15000000000000002,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            20,
+            20
+          ],
+          "independence_groups_used": 20,
+          "unique_discovery_prompt_hashes": 20,
+          "score_grid": 0.05
+        },
+        "argument_binding": {
+          "discovery": 0.65,
+          "validation": 0.55,
+          "absolute_gap": 0.09999999999999998,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            20,
+            20
+          ],
+          "independence_groups_used": 20,
+          "unique_discovery_prompt_hashes": 20,
+          "score_grid": 0.05
+        },
+        "full_call": {
+          "discovery": 0.65,
+          "validation": 0.55,
+          "absolute_gap": 0.09999999999999998,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            20,
+            20
+          ],
+          "independence_groups_used": 20,
+          "unique_discovery_prompt_hashes": 20,
+          "score_grid": 0.05
+        },
+        "abstention": {
+          "discovery": 0.9,
+          "validation": 0.9,
+          "absolute_gap": 0.0,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            10,
+            10
+          ],
+          "independence_groups_used": 10,
+          "unique_discovery_prompt_hashes": 10,
+          "score_grid": 0.1
+        },
+        "structured_reasoning": {
+          "discovery": 0.1,
+          "validation": 0.0,
+          "absolute_gap": 0.1,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            10,
+            10
+          ],
+          "independence_groups_used": 10,
+          "unique_discovery_prompt_hashes": 10,
+          "score_grid": 0.1
+        },
+        "instruction_format": {
+          "discovery": 1.0,
+          "validation": 0.6,
+          "absolute_gap": 0.4,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            5,
+            5
+          ],
+          "independence_groups_used": 2,
+          "unique_discovery_prompt_hashes": 2,
+          "score_grid": 0.2
+        },
+        "perplexity": {
+          "discovery": 31.42442855834961,
+          "validation": 34.929631042480466,
+          "absolute_gap": 3.505202484130855,
+          "relative_gap": 0.11154387350663557,
+          "unique_records_per_split": [
+            5,
+            5
+          ],
+          "independence_groups_used": 5,
+          "unique_discovery_prompt_hashes": 5,
+          "score_grid": null
+        }
+      },
+      "metric_analysis": {
+        "tool_selection": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.9307730477801928,
+            "p025": 0.8632140045148838,
+            "p975": 0.9579806110581122,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.6000000000000001,
+              "pointwise_bootstrap_95": [
+                0.39999999999999997,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                19.5
+              ],
+              "top5_tie_inclusive_fraction": 0.005
+            },
+            {
+              "layer": 4,
+              "damage": 0.75,
+              "pointwise_bootstrap_95": [
+                0.5499999999999999,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 0.381
+            },
+            {
+              "layer": 5,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.6000000000000001
+              ],
+              "bootstrap_rank_95": [
+                17.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 7,
+              "damage": -0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                -0.35,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                24.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": -0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.20000000000000007
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.5,
+              "pointwise_bootstrap_95": [
+                0.25000000000000006,
+                0.7000000000000001
+              ],
+              "bootstrap_rank_95": [
+                15.0,
+                20.51249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 12,
+              "damage": 0.5,
+              "pointwise_bootstrap_95": [
+                0.24999999999999994,
+                0.75
+              ],
+              "bootstrap_rank_95": [
+                14.5,
+                21.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 13,
+              "damage": -0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.20000000000000007
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                26.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.10000000000000009,
+              "pointwise_bootstrap_95": [
+                -0.15000000000000002,
+                0.35
+              ],
+              "bootstrap_rank_95": [
+                21.5,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.4,
+                -0.050000000000000044
+              ],
+              "bootstrap_rank_95": [
+                27.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.4,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                16.5,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.45000000000000007,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.7
+              ],
+              "bootstrap_rank_95": [
+                15.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.7000000000000001,
+              "pointwise_bootstrap_95": [
+                0.45000000000000007,
+                0.9
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                16.5
+              ],
+              "top5_tie_inclusive_fraction": 0.138
+            },
+            {
+              "layer": 23,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.35,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                24.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.75,
+              "pointwise_bootstrap_95": [
+                0.5499999999999999,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.352
+            },
+            {
+              "layer": 25,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.09999999999999998,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.8,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.6000000000000001,
+              "pointwise_bootstrap_95": [
+                0.39875000000000005,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                12.5,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.01
+            }
+          ]
+        },
+        "argument_binding": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.9281586021396131,
+            "p025": 0.8612424375380728,
+            "p975": 0.9642986691305697,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.45,
+              "pointwise_bootstrap_95": [
+                0.20000000000000007,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                13.5,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.005
+            },
+            {
+              "layer": 4,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.35000000000000003,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.381
+            },
+            {
+              "layer": 5,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.04999999999999999,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                22.51249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 7,
+              "damage": -0.15000000000000002,
+              "pointwise_bootstrap_95": [
+                -0.35,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                25.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": -0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                -0.20000000000000007,
+                0.09999999999999998
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.45,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.7
+              ],
+              "bootstrap_rank_95": [
+                13.5,
+                20.51249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.01
+            },
+            {
+              "layer": 12,
+              "damage": 0.4,
+              "pointwise_bootstrap_95": [
+                0.14999999999999997,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                14.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.006
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.24999999999999994,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.050000000000000044,
+              "pointwise_bootstrap_95": [
+                -0.15124999999999994,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                21.5,
+                26.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.4,
+                -0.04999999999999993
+              ],
+              "bootstrap_rank_95": [
+                25.5,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.001
+            },
+            {
+              "layer": 18,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                15.0,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.55,
+              "pointwise_bootstrap_95": [
+                0.30000000000000004,
+                0.75
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                17.5
+              ],
+              "top5_tie_inclusive_fraction": 0.138
+            },
+            {
+              "layer": 23,
+              "damage": -0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                -0.25,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 25,
+              "damage": 0.25,
+              "pointwise_bootstrap_95": [
+                0.09999999999999998,
+                0.45
+              ],
+              "bootstrap_rank_95": [
+                17.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.5,
+              "pointwise_bootstrap_95": [
+                0.3,
+                0.7000000000000001
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                19.51249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.029
+            }
+          ]
+        },
+        "full_call": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.9247771005600106,
+            "p025": 0.8590288033463453,
+            "p975": 0.964177827741272,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.45,
+              "pointwise_bootstrap_95": [
+                0.20000000000000007,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                13.5,
+                21.0
+              ],
+              "top5_tie_inclusive_fraction": 0.005
+            },
+            {
+              "layer": 4,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.35000000000000003,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.381
+            },
+            {
+              "layer": 5,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.04999999999999999,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 7,
+              "damage": -0.15000000000000002,
+              "pointwise_bootstrap_95": [
+                -0.35,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                25.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.20000000000000007,
+                0.19999999999999996
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                26.51249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.45,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.7
+              ],
+              "bootstrap_rank_95": [
+                13.5,
+                21.0
+              ],
+              "top5_tie_inclusive_fraction": 0.01
+            },
+            {
+              "layer": 12,
+              "damage": 0.4,
+              "pointwise_bootstrap_95": [
+                0.14999999999999997,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                14.5,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.006
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.24999999999999994,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.050000000000000044,
+              "pointwise_bootstrap_95": [
+                -0.15124999999999994,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                26.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.4,
+                -0.04999999999999993
+              ],
+              "bootstrap_rank_95": [
+                26.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.001
+            },
+            {
+              "layer": 18,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.35000000000000003,
+              "pointwise_bootstrap_95": [
+                0.09999999999999998,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                14.5,
+                22.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.55,
+              "pointwise_bootstrap_95": [
+                0.30000000000000004,
+                0.75
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                17.5
+              ],
+              "top5_tie_inclusive_fraction": 0.138
+            },
+            {
+              "layer": 23,
+              "damage": -0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                -0.25,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 25,
+              "damage": 0.25,
+              "pointwise_bootstrap_95": [
+                0.09999999999999998,
+                0.45
+              ],
+              "bootstrap_rank_95": [
+                17.5,
+                23.01249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.65,
+              "pointwise_bootstrap_95": [
+                0.4,
+                0.85
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.5,
+              "pointwise_bootstrap_95": [
+                0.3,
+                0.7000000000000001
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.029
+            }
+          ]
+        },
+        "abstention": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.6331965616171396,
+            "p025": 0.3862513570551429,
+            "p975": 0.724902413195449,
+            "undefined": 37
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 1,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 2,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 3,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.36
+            },
+            {
+              "layer": 4,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 5,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                16.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 6,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 7,
+              "damage": 0.20000000000000007,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                1.5,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                16.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 9,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 10,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 11,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 12,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 13,
+              "damage": 0.20000000000000007,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                1.5,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 14,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 15,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                18.5
+              ],
+              "top5_tie_inclusive_fraction": 0.643
+            },
+            {
+              "layer": 16,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                1.0,
+                7.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                16.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 18,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 19,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 20,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                16.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 21,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 22,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.36
+            },
+            {
+              "layer": 23,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                16.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.36
+            },
+            {
+              "layer": 25,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.36
+            },
+            {
+              "layer": 26,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.5,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 27,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.36
+            }
+          ]
+        },
+        "structured_reasoning": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.20672455764868075,
+            "p025": 0.20672455764868075,
+            "p975": 0.20672455764868075,
+            "undefined": 460
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 4,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 5,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 6,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 7,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 11,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.5,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.096
+            },
+            {
+              "layer": 12,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 14,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 15,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 18,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 20,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 22,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 23,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 24,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 25,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.1,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                14.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            }
+          ]
+        },
+        "instruction_format": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.5488604301969738,
+            "p025": 0.5488604301969738,
+            "p975": 0.5488604301969738,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.5,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.5,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.5,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.4,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                4.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 4,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.5,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 5,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 7,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.253
+            },
+            {
+              "layer": 8,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 12,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 15,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.5,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 16,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.5,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.253
+            },
+            {
+              "layer": 18,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.253
+            },
+            {
+              "layer": 19,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 23,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.253
+            },
+            {
+              "layer": 25,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                20.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.253
+            }
+          ]
+        },
+        "perplexity": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.9080459770114943,
+            "p025": 0.8007662835249042,
+            "p975": 0.9545703338806787,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 80957.94234881876,
+              "pointwise_bootstrap_95": [
+                33158.269583767506,
+                167650.5272091055
+              ],
+              "bootstrap_rank_95": [
+                1.0,
+                1.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 4329.529072697665,
+              "pointwise_bootstrap_95": [
+                1370.154588976987,
+                6112.914968560352
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 99.39980094505214,
+              "pointwise_bootstrap_95": [
+                32.02415828451274,
+                153.30858348851822
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                3.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.33625522404521996,
+              "pointwise_bootstrap_95": [
+                0.2461971648127607,
+                0.39564223091194856
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                14.024999999999977
+              ],
+              "top5_tie_inclusive_fraction": 0.03
+            },
+            {
+              "layer": 4,
+              "damage": 0.4797710057196127,
+              "pointwise_bootstrap_95": [
+                0.2134518089712286,
+                0.5984028546970233
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                15.0
+              ],
+              "top5_tie_inclusive_fraction": 0.289
+            },
+            {
+              "layer": 5,
+              "damage": 0.3054307078504946,
+              "pointwise_bootstrap_95": [
+                0.1479849183506667,
+                0.3861248692543217
+              ],
+              "bootstrap_rank_95": [
+                9.0,
+                17.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.3251278805676139,
+              "pointwise_bootstrap_95": [
+                0.21738292205838802,
+                0.3888738939275854
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 7,
+              "damage": 0.07886226700394738,
+              "pointwise_bootstrap_95": [
+                0.019566383252109264,
+                0.1361768418629084
+              ],
+              "bootstrap_rank_95": [
+                20.0,
+                26.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.058356011721390814,
+              "pointwise_bootstrap_95": [
+                -0.006505230515087435,
+                0.0894001510823291
+              ],
+              "bootstrap_rank_95": [
+                23.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.09640701303299087,
+              "pointwise_bootstrap_95": [
+                0.0326944686157674,
+                0.20826186144348136
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                26.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.09283336878405765,
+              "pointwise_bootstrap_95": [
+                0.014565815598471444,
+                0.12922881456624166
+              ],
+              "bootstrap_rank_95": [
+                21.0,
+                26.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.2523973183179909,
+              "pointwise_bootstrap_95": [
+                0.22478510305967672,
+                0.3008227466304784
+              ],
+              "bootstrap_rank_95": [
+                10.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 12,
+              "damage": 0.04434582148125492,
+              "pointwise_bootstrap_95": [
+                0.006857209825843382,
+                0.06433393588279361
+              ],
+              "bootstrap_rank_95": [
+                24.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 13,
+              "damage": 0.10148339006298981,
+              "pointwise_bootstrap_95": [
+                0.055652087311720146,
+                0.1292584272660938
+              ],
+              "bootstrap_rank_95": [
+                20.0,
+                24.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.007810954708444153,
+              "pointwise_bootstrap_95": [
+                -0.002241447697840625,
+                0.01606865291890917
+              ],
+              "bootstrap_rank_95": [
+                27.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.020281678726508698,
+              "pointwise_bootstrap_95": [
+                -0.007038768769150768,
+                0.03707123429791551
+              ],
+              "bootstrap_rank_95": [
+                24.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.25576108667084235,
+              "pointwise_bootstrap_95": [
+                0.22016610691668406,
+                0.3155145197050583
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.037
+            },
+            {
+              "layer": 17,
+              "damage": 0.13814242946238536,
+              "pointwise_bootstrap_95": [
+                0.06438440484244444,
+                0.17366848857804218
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.14967237193898214,
+              "pointwise_bootstrap_95": [
+                0.10017285697866053,
+                0.18181276849032021
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.2533931393246004,
+              "pointwise_bootstrap_95": [
+                0.1976719902935654,
+                0.34129189652835545
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.5047798510011027,
+              "pointwise_bootstrap_95": [
+                0.2389829817220993,
+                0.6407800203189083
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                13.0
+              ],
+              "top5_tie_inclusive_fraction": 0.577
+            },
+            {
+              "layer": 21,
+              "damage": 0.4119858377410831,
+              "pointwise_bootstrap_95": [
+                0.2443784386447896,
+                0.5018679947003379
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                12.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.4397825156929848,
+              "pointwise_bootstrap_95": [
+                0.21175004777576448,
+                0.5571385916897496
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                13.0
+              ],
+              "top5_tie_inclusive_fraction": 0.05
+            },
+            {
+              "layer": 23,
+              "damage": 0.34682064056177436,
+              "pointwise_bootstrap_95": [
+                0.16770638237925198,
+                0.4373068212233555
+              ],
+              "bootstrap_rank_95": [
+                10.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.27561133562427315,
+              "pointwise_bootstrap_95": [
+                0.1488768509185018,
+                0.35059227456566644
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 25,
+              "damage": 0.22784855149456654,
+              "pointwise_bootstrap_95": [
+                0.12715895276381864,
+                0.28227772869750467
+              ],
+              "bootstrap_rank_95": [
+                15.0,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.4342365308753796,
+              "pointwise_bootstrap_95": [
+                0.24702323501632645,
+                0.5463474968840156
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                12.0
+              ],
+              "top5_tie_inclusive_fraction": 0.023
+            },
+            {
+              "layer": 27,
+              "damage": 0.7338526846257828,
+              "pointwise_bootstrap_95": [
+                0.49960387961603836,
+                0.8703932340050665
+              ],
+              "bootstrap_rank_95": [
+                4.0,
+                4.0
+              ],
+              "top5_tie_inclusive_fraction": 0.992
+            }
+          ]
+        }
+      },
+      "random_duplicate": {
+        "condition": "control.random.transformer.block.018",
+        "scan_condition": "scan.transformer.block.018",
+        "rows": 100,
+        "hashes_and_scores_equal": true
+      },
+      "binding_full_call": {
+        "paired_rows": 1360,
+        "unequal": 4
+      },
+      "baseline_controls_equal": {
+        "baseline.middle": true,
+        "baseline.end": true,
+        "control.no-op": true
+      },
+      "rank_correlations_between_metrics": {
+        "tool_selection vs argument_binding": 0.986353410183508,
+        "tool_selection vs abstention": -0.8961624349164076,
+        "tool_selection vs perplexity": 0.30595703429178245,
+        "tool_selection vs instruction_format": -0.00806008070493792
+      }
+    },
+    "1.7": {
+      "observations": 3400,
+      "status_counts": {
+        "complete": 3400
+      },
+      "condition_counts": {
+        "baseline.beginning": 100,
+        "baseline.end": 100,
+        "baseline.middle": 100,
+        "control.no-op": 100,
+        "control.random.transformer.block.018": 100,
+        "scan.transformer.block.000": 100,
+        "scan.transformer.block.001": 100,
+        "scan.transformer.block.002": 100,
+        "scan.transformer.block.003": 100,
+        "scan.transformer.block.004": 100,
+        "scan.transformer.block.005": 100,
+        "scan.transformer.block.006": 100,
+        "scan.transformer.block.007": 100,
+        "scan.transformer.block.008": 100,
+        "scan.transformer.block.009": 100,
+        "scan.transformer.block.010": 100,
+        "scan.transformer.block.011": 100,
+        "scan.transformer.block.012": 100,
+        "scan.transformer.block.013": 100,
+        "scan.transformer.block.014": 100,
+        "scan.transformer.block.015": 100,
+        "scan.transformer.block.016": 100,
+        "scan.transformer.block.017": 100,
+        "scan.transformer.block.018": 100,
+        "scan.transformer.block.019": 100,
+        "scan.transformer.block.020": 100,
+        "scan.transformer.block.021": 100,
+        "scan.transformer.block.022": 100,
+        "scan.transformer.block.023": 100,
+        "scan.transformer.block.024": 100,
+        "scan.transformer.block.025": 100,
+        "scan.transformer.block.026": 100,
+        "scan.transformer.block.027": 100,
+        "validation.baseline": 100
+      },
+      "unique_examples_by_partition": {
+        "discovery": 50,
+        "validation": 50
+      },
+      "classification_counts": {
+        "broadly_sensitive": 19,
+        "target_sensitive": 5,
+        "collateral_sensitive": 4
+      },
+      "candidates": [],
+      "repeated_rows": {
+        "pairs": 1700,
+        "nonidentical_output_hash_pairs": 0,
+        "nonidentical_score_pairs": 0
+      },
+      "baseline_metrics": {
+        "tool_selection": {
+          "discovery": 1.0,
+          "validation": 1.0,
+          "absolute_gap": 0.0,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            20,
+            20
+          ],
+          "independence_groups_used": 20,
+          "unique_discovery_prompt_hashes": 20,
+          "score_grid": 0.05
+        },
+        "argument_binding": {
+          "discovery": 0.95,
+          "validation": 0.95,
+          "absolute_gap": 0.0,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            20,
+            20
+          ],
+          "independence_groups_used": 20,
+          "unique_discovery_prompt_hashes": 20,
+          "score_grid": 0.05
+        },
+        "full_call": {
+          "discovery": 0.95,
+          "validation": 0.95,
+          "absolute_gap": 0.0,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            20,
+            20
+          ],
+          "independence_groups_used": 20,
+          "unique_discovery_prompt_hashes": 20,
+          "score_grid": 0.05
+        },
+        "abstention": {
+          "discovery": 0.8,
+          "validation": 0.8,
+          "absolute_gap": 0.0,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            10,
+            10
+          ],
+          "independence_groups_used": 10,
+          "unique_discovery_prompt_hashes": 10,
+          "score_grid": 0.1
+        },
+        "structured_reasoning": {
+          "discovery": 0.0,
+          "validation": 0.1,
+          "absolute_gap": 0.1,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            10,
+            10
+          ],
+          "independence_groups_used": 10,
+          "unique_discovery_prompt_hashes": 10,
+          "score_grid": 0.1
+        },
+        "instruction_format": {
+          "discovery": 1.0,
+          "validation": 0.6,
+          "absolute_gap": 0.4,
+          "relative_gap": null,
+          "unique_records_per_split": [
+            5,
+            5
+          ],
+          "independence_groups_used": 2,
+          "unique_discovery_prompt_hashes": 2,
+          "score_grid": 0.2
+        },
+        "perplexity": {
+          "discovery": 22.592421531677246,
+          "validation": 23.41209774017334,
+          "absolute_gap": 0.8196762084960945,
+          "relative_gap": 0.03628102491566969,
+          "unique_records_per_split": [
+            5,
+            5
+          ],
+          "independence_groups_used": 5,
+          "unique_discovery_prompt_hashes": 5,
+          "score_grid": null
+        }
+      },
+      "metric_analysis": {
+        "tool_selection": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.8757614731271047,
+            "p025": 0.8077603914649424,
+            "p975": 0.922780579944656,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.15000000000000002,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                9.0,
+                21.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 2,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 4,
+              "damage": 0.050000000000000044,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                12.5,
+                22.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 5,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 7,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.050000000000000044,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                12.5,
+                22.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 11,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 12,
+              "damage": 0.44999999999999996,
+              "pointwise_bootstrap_95": [
+                0.25,
+                0.7
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                10.0
+              ],
+              "top5_tie_inclusive_fraction": 0.005
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                11.512499999999989
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                21.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                10.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                10.5,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.35,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                11.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.4,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                11.0
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 21,
+              "damage": 0.5,
+              "pointwise_bootstrap_95": [
+                0.30000000000000004,
+                0.7
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                10.0
+              ],
+              "top5_tie_inclusive_fraction": 0.016
+            },
+            {
+              "layer": 22,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 23,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.5,
+                5.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 25,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                20.5,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.050000000000000044,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                11.5,
+                22.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.85,
+              "pointwise_bootstrap_95": [
+                0.65,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                5.0
+              ],
+              "top5_tie_inclusive_fraction": 0.987
+            }
+          ]
+        },
+        "argument_binding": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.8425952731933737,
+            "p025": 0.7428576387163927,
+            "p975": 0.9116389404113138,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.29999999999999993,
+              "pointwise_bootstrap_95": [
+                0.1499999999999999,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3012499999999989
+              ],
+              "bootstrap_rank_95": [
+                12.4875,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 4,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                23.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 5,
+              "damage": 0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3012499999999989
+              ],
+              "bootstrap_rank_95": [
+                11.5,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.15000000000000002,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                21.5,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 7,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                26.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                -0.050000000000000044,
+                0.35124999999999884
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                26.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.15000000000000002,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                21.5,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.25,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.44999999999999996
+              ],
+              "bootstrap_rank_95": [
+                9.0,
+                17.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 12,
+              "damage": 0.3999999999999999,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.6499999999999999
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.005
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.35,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                15.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                24.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.25,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.44999999999999996
+              ],
+              "bootstrap_rank_95": [
+                8.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                14.4875,
+                24.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.35,
+              "pointwise_bootstrap_95": [
+                0.09999999999999998,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                17.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.3999999999999999,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                14.0
+              ],
+              "top5_tie_inclusive_fraction": 0.003
+            },
+            {
+              "layer": 21,
+              "damage": 0.44999999999999996,
+              "pointwise_bootstrap_95": [
+                0.25,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                12.5
+              ],
+              "top5_tie_inclusive_fraction": 0.013
+            },
+            {
+              "layer": 22,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.35,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                10.0
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 23,
+              "damage": 0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.8999999999999999,
+              "pointwise_bootstrap_95": [
+                0.75,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.5,
+                5.0
+              ],
+              "top5_tie_inclusive_fraction": 0.999
+            },
+            {
+              "layer": 25,
+              "damage": 0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.7999999999999999,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 0.94
+            }
+          ]
+        },
+        "full_call": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.8425952731933737,
+            "p025": 0.7428576387163927,
+            "p975": 0.9116389404113138,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.29999999999999993,
+              "pointwise_bootstrap_95": [
+                0.1499999999999999,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3012499999999989
+              ],
+              "bootstrap_rank_95": [
+                12.4875,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 4,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                23.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 5,
+              "damage": 0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.3012499999999989
+              ],
+              "bootstrap_rank_95": [
+                11.5,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 6,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.15000000000000002,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                21.5,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 7,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                26.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.1499999999999999,
+              "pointwise_bootstrap_95": [
+                -0.050000000000000044,
+                0.35124999999999884
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                26.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.15000000000000002,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                21.5,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.25,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.44999999999999996
+              ],
+              "bootstrap_rank_95": [
+                9.0,
+                17.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.95,
+              "pointwise_bootstrap_95": [
+                0.85,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 12,
+              "damage": 0.3999999999999999,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.6499999999999999
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.005
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.35,
+              "pointwise_bootstrap_95": [
+                0.15000000000000002,
+                0.55
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                15.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                14.0,
+                24.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                22.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.25,
+              "pointwise_bootstrap_95": [
+                0.050000000000000044,
+                0.44999999999999996
+              ],
+              "bootstrap_rank_95": [
+                8.5,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.25
+              ],
+              "bootstrap_rank_95": [
+                14.4875,
+                24.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.35,
+              "pointwise_bootstrap_95": [
+                0.09999999999999998,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                6.5,
+                17.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.3999999999999999,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.6
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                14.0
+              ],
+              "top5_tie_inclusive_fraction": 0.003
+            },
+            {
+              "layer": 21,
+              "damage": 0.44999999999999996,
+              "pointwise_bootstrap_95": [
+                0.25,
+                0.65
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                12.5
+              ],
+              "top5_tie_inclusive_fraction": 0.013
+            },
+            {
+              "layer": 22,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.35,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                10.0
+              ],
+              "top5_tie_inclusive_fraction": 0.104
+            },
+            {
+              "layer": 23,
+              "damage": 0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.8999999999999999,
+              "pointwise_bootstrap_95": [
+                0.75,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.5,
+                5.0
+              ],
+              "top5_tie_inclusive_fraction": 0.999
+            },
+            {
+              "layer": 25,
+              "damage": 0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.04999999999999993,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.15000000000000002
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.7999999999999999,
+              "pointwise_bootstrap_95": [
+                0.6,
+                0.95
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 0.94
+            }
+          ]
+        },
+        "abstention": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.7367393085268943,
+            "p025": 0.38715250830278664,
+            "p975": 0.8966568306350541,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 1,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.6000000000000001
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                12.5
+              ],
+              "top5_tie_inclusive_fraction": 0.942
+            },
+            {
+              "layer": 2,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 3,
+              "damage": 0.20000000000000007,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                14.0
+              ],
+              "top5_tie_inclusive_fraction": 0.508
+            },
+            {
+              "layer": 4,
+              "damage": 0.10000000000000009,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                17.51249999999999
+              ],
+              "top5_tie_inclusive_fraction": 0.123
+            },
+            {
+              "layer": 5,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 6,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.6000000000000001
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                13.0
+              ],
+              "top5_tie_inclusive_fraction": 0.937
+            },
+            {
+              "layer": 7,
+              "damage": 0.20000000000000007,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.5
+              ],
+              "bootstrap_rank_95": [
+                4.5,
+                14.0
+              ],
+              "top5_tie_inclusive_fraction": 0.508
+            },
+            {
+              "layer": 8,
+              "damage": 0.30000000000000004,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.6000000000000001
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                13.0
+              ],
+              "top5_tie_inclusive_fraction": 0.937
+            },
+            {
+              "layer": 9,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 10,
+              "damage": -0.09999999999999998,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                15.0,
+                25.0
+              ],
+              "top5_tie_inclusive_fraction": 0.004
+            },
+            {
+              "layer": 11,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 12,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 13,
+              "damage": 0.6000000000000001,
+              "pointwise_bootstrap_95": [
+                0.29999999999999993,
+                0.9
+              ],
+              "bootstrap_rank_95": [
+                1.0,
+                4.0
+              ],
+              "top5_tie_inclusive_fraction": 0.997
+            },
+            {
+              "layer": 14,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 15,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                -0.30000000000000004,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                7.5,
+                24.5
+              ],
+              "top5_tie_inclusive_fraction": 0.028
+            },
+            {
+              "layer": 16,
+              "damage": 0.5,
+              "pointwise_bootstrap_95": [
+                0.19999999999999996,
+                0.8
+              ],
+              "bootstrap_rank_95": [
+                1.0,
+                7.0
+              ],
+              "top5_tie_inclusive_fraction": 0.96
+            },
+            {
+              "layer": 17,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 18,
+              "damage": 0.10000000000000009,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.29
+            },
+            {
+              "layer": 19,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            },
+            {
+              "layer": 20,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 21,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 22,
+              "damage": 0.10000000000000009,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.30000000000000004
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                18.0
+              ],
+              "top5_tie_inclusive_fraction": 0.29
+            },
+            {
+              "layer": 23,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 24,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 25,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 26,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                13.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.018
+            },
+            {
+              "layer": 27,
+              "damage": -0.19999999999999996,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                25.5
+              ],
+              "top5_tie_inclusive_fraction": 0.002
+            }
+          ]
+        },
+        "structured_reasoning": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.125,
+            "p025": -0.1411067365901115,
+            "p975": 0.3333333333333333,
+            "undefined": 45
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.3,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                12.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.333
+            },
+            {
+              "layer": 4,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 5,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 6,
+              "damage": -0.2,
+              "pointwise_bootstrap_95": [
+                -0.5,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                12.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.105
+            },
+            {
+              "layer": 7,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.3,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                12.0,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.333
+            },
+            {
+              "layer": 8,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 9,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.3,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.5,
+                27.5
+              ],
+              "top5_tie_inclusive_fraction": 0.35
+            },
+            {
+              "layer": 10,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.3,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                12.5,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 11,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.3,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                12.5,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 12,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 14,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 15,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 19,
+              "damage": -0.1,
+              "pointwise_bootstrap_95": [
+                -0.3,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                12.5,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.334
+            },
+            {
+              "layer": 20,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 23,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 25,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 27,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                13.5
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            }
+          ]
+        },
+        "instruction_format": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.43064433753916403,
+            "p025": 0.43064433753916403,
+            "p975": 0.43064433753916403,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 4,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 5,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 6,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 7,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 8,
+              "damage": 1.0,
+              "pointwise_bootstrap_95": [
+                1.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                6.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 10,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 11,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 12,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 13,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 14,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 15,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 16,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 19,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 21,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 22,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 23,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 24,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 25,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 26,
+              "damage": 0.0,
+              "pointwise_bootstrap_95": [
+                0.0,
+                0.0
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                20.0
+              ],
+              "top5_tie_inclusive_fraction": 0.251
+            },
+            {
+              "layer": 27,
+              "damage": 0.6,
+              "pointwise_bootstrap_95": [
+                0.0,
+                1.0
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            }
+          ]
+        },
+        "perplexity": {
+          "split_half_rank_correlation_distribution": {
+            "median": 0.8659003831417624,
+            "p025": 0.8106185002736727,
+            "p975": 0.9042145593869731,
+            "undefined": 0
+          },
+          "layers": [
+            {
+              "layer": 0,
+              "damage": 1094134.7719098765,
+              "pointwise_bootstrap_95": [
+                182380.6718318776,
+                1652890.6367347694
+              ],
+              "bootstrap_rank_95": [
+                1.0,
+                1.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 1,
+              "damage": 15.415698557412997,
+              "pointwise_bootstrap_95": [
+                2.2426392493588785,
+                34.77084517671703
+              ],
+              "bootstrap_rank_95": [
+                3.0,
+                3.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 2,
+              "damage": 690.2615851390665,
+              "pointwise_bootstrap_95": [
+                75.06486232683643,
+                1203.3200637902462
+              ],
+              "bootstrap_rank_95": [
+                2.0,
+                2.0
+              ],
+              "top5_tie_inclusive_fraction": 1.0
+            },
+            {
+              "layer": 3,
+              "damage": 0.30482083249841246,
+              "pointwise_bootstrap_95": [
+                0.16890222992316214,
+                0.4344444295211615
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 4,
+              "damage": 0.4816122552967892,
+              "pointwise_bootstrap_95": [
+                0.2996889203175047,
+                0.6642790925655587
+              ],
+              "bootstrap_rank_95": [
+                4.0,
+                8.0
+              ],
+              "top5_tie_inclusive_fraction": 0.384
+            },
+            {
+              "layer": 5,
+              "damage": 0.4217757538654391,
+              "pointwise_bootstrap_95": [
+                0.10107558645317107,
+                0.64244032122028
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.164
+            },
+            {
+              "layer": 6,
+              "damage": 0.17227310355552386,
+              "pointwise_bootstrap_95": [
+                0.09538077712702572,
+                0.24952059366569587
+              ],
+              "bootstrap_rank_95": [
+                12.0,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 7,
+              "damage": 0.07193980076970455,
+              "pointwise_bootstrap_95": [
+                -0.008243057127669791,
+                0.15083043060385543
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                24.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 8,
+              "damage": 0.06392676431205559,
+              "pointwise_bootstrap_95": [
+                0.006320638465264267,
+                0.14365690425447444
+              ],
+              "bootstrap_rank_95": [
+                18.0,
+                24.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 9,
+              "damage": 0.21129308808815378,
+              "pointwise_bootstrap_95": [
+                0.04674604280794251,
+                0.3382783249749082
+              ],
+              "bootstrap_rank_95": [
+                11.0,
+                22.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 10,
+              "damage": 0.04033764472588312,
+              "pointwise_bootstrap_95": [
+                -0.06865329983325469,
+                0.12175754584317643
+              ],
+              "bootstrap_rank_95": [
+                21.0,
+                27.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 11,
+              "damage": 0.29758292900792915,
+              "pointwise_bootstrap_95": [
+                0.1547526471023815,
+                0.3979820164966684
+              ],
+              "bootstrap_rank_95": [
+                8.0,
+                16.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 12,
+              "damage": -0.010075360900023474,
+              "pointwise_bootstrap_95": [
+                -0.046557495553684033,
+                0.01565842154789587
+              ],
+              "bootstrap_rank_95": [
+                25.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 13,
+              "damage": -0.00630764937470527,
+              "pointwise_bootstrap_95": [
+                -0.0653472857183416,
+                0.08140518834544697
+              ],
+              "bootstrap_rank_95": [
+                19.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 14,
+              "damage": -0.025665762384269694,
+              "pointwise_bootstrap_95": [
+                -0.0873991821906813,
+                0.021235113656031025
+              ],
+              "bootstrap_rank_95": [
+                25.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 15,
+              "damage": -0.051363791723475466,
+              "pointwise_bootstrap_95": [
+                -0.09650864727475804,
+                -0.007351972092013459
+              ],
+              "bootstrap_rank_95": [
+                25.0,
+                28.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 16,
+              "damage": 0.2630743409282389,
+              "pointwise_bootstrap_95": [
+                0.16141961948231365,
+                0.3065583687713785
+              ],
+              "bootstrap_rank_95": [
+                9.0,
+                17.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 17,
+              "damage": 0.08957478915777968,
+              "pointwise_bootstrap_95": [
+                -0.01071180680351377,
+                0.1643556686414536
+              ],
+              "bootstrap_rank_95": [
+                20.0,
+                24.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 18,
+              "damage": 0.1401574284638358,
+              "pointwise_bootstrap_95": [
+                0.029722720406287432,
+                0.21937390903083545
+              ],
+              "bootstrap_rank_95": [
+                16.0,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 19,
+              "damage": 0.10237219949403689,
+              "pointwise_bootstrap_95": [
+                0.06816570087192003,
+                0.12263619032714203
+              ],
+              "bootstrap_rank_95": [
+                17.0,
+                23.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 20,
+              "damage": 0.6830015157110816,
+              "pointwise_bootstrap_95": [
+                0.4275284321211659,
+                0.8516202040544614
+              ],
+              "bootstrap_rank_95": [
+                4.0,
+                5.0
+              ],
+              "top5_tie_inclusive_fraction": 0.988
+            },
+            {
+              "layer": 21,
+              "damage": 0.34925155143309977,
+              "pointwise_bootstrap_95": [
+                0.18025241558595423,
+                0.46685067486364046
+              ],
+              "bootstrap_rank_95": [
+                7.0,
+                14.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 22,
+              "damage": 0.48945440859513323,
+              "pointwise_bootstrap_95": [
+                0.19946104288140862,
+                0.6409341819976975
+              ],
+              "bootstrap_rank_95": [
+                5.0,
+                12.0
+              ],
+              "top5_tie_inclusive_fraction": 0.385
+            },
+            {
+              "layer": 23,
+              "damage": 0.20356755847256405,
+              "pointwise_bootstrap_95": [
+                0.17023289036130376,
+                0.25252880588718946
+              ],
+              "bootstrap_rank_95": [
+                10.950000000000003,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 24,
+              "damage": 0.4111554765325653,
+              "pointwise_bootstrap_95": [
+                0.24026633890893165,
+                0.5284116511637457
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                11.0
+              ],
+              "top5_tie_inclusive_fraction": 0.003
+            },
+            {
+              "layer": 25,
+              "damage": 0.2029986908751002,
+              "pointwise_bootstrap_95": [
+                0.1296904219836058,
+                0.25229556522369107
+              ],
+              "bootstrap_rank_95": [
+                12.0,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.0
+            },
+            {
+              "layer": 26,
+              "damage": 0.3494896700788282,
+              "pointwise_bootstrap_95": [
+                0.21952091248670827,
+                0.533866115322373
+              ],
+              "bootstrap_rank_95": [
+                4.0,
+                15.0
+              ],
+              "top5_tie_inclusive_fraction": 0.07
+            },
+            {
+              "layer": 27,
+              "damage": 0.2368102131075344,
+              "pointwise_bootstrap_95": [
+                0.10431653672954319,
+                0.37693768881242173
+              ],
+              "bootstrap_rank_95": [
+                6.0,
+                19.0
+              ],
+              "top5_tie_inclusive_fraction": 0.006
+            }
+          ]
+        }
+      },
+      "random_duplicate": {
+        "condition": "control.random.transformer.block.018",
+        "scan_condition": "scan.transformer.block.018",
+        "rows": 100,
+        "hashes_and_scores_equal": true
+      },
+      "binding_full_call": {
+        "paired_rows": 1360,
+        "unequal": 0
+      },
+      "baseline_controls_equal": {
+        "baseline.middle": true,
+        "baseline.end": true,
+        "control.no-op": true
+      },
+      "rank_correlations_between_metrics": {
+        "tool_selection vs argument_binding": 0.8138394153125201,
+        "tool_selection vs abstention": -0.6990681948458367,
+        "tool_selection vs perplexity": 0.26356736711285894,
+        "tool_selection vs instruction_format": 0.5033162433778479
+      }
+    }
+  },
+  "phase5_cross_size_rank_correlations_same_28_indices": {
+    "tool_selection": 0.43935214876317863,
+    "argument_binding": 0.3494705307116473,
+    "full_call": 0.35791146676800956,
+    "abstention": 0.4319635215266827,
+    "structured_reasoning": 0.18790141754215195,
+    "instruction_format": 0.282715175911129,
+    "perplexity": 0.8970990695128627
+  }
+}

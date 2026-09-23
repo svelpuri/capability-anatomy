@@ -1,0 +1,20 @@
+{
+  "schema_version": "capability-anatomy/paper-dataset-identity/v1",
+  "manifest_sha256": "8e95c119a1f509eaa694b8813f77bc39643e16922d1cc7584813035a54a47648",
+  "record_plan_sha256": "59edc6c23596c9602d97db2e7c4baddffb166dce29213fcc18fb0d626ea7f2a4",
+  "prompt_templates_sha256": "5bd28c2c7d1b20299c469f0811db5a540c914791d168573447ea4d41e62a4e6e",
+  "record_plan": "../../artifacts/qwen3-0.6b/record-plan.json",
+  "original_benchmark_text_redistributed": false,
+  "counts_per_partition": {
+    "tool_selection": 20,
+    "abstention": 10,
+    "reasoning": 10,
+    "perplexity": 5,
+    "format": 5
+  },
+  "partitions": [
+    "discovery",
+    "validation"
+  ],
+  "validation_execution": "baseline only"
+}

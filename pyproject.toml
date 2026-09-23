@@ -1,0 +1,75 @@
+[project]
+name = "capability-anatomy"
+version = "0.1.0"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+description = "Model-neutral capability intervention and evidence contracts"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "ijson==3.5.1",
+  "jsonschema==4.26.0",
+  "opentelemetry-api==1.44.0",
+  "opentelemetry-sdk==1.44.0",
+  "opentelemetry-exporter-otlp-proto-http==1.44.0",
+  "PyYAML==6.0.3",
+]
+
+[project.optional-dependencies]
+qwen3 = ["torch==2.14.0", "transformers==5.17.0"]
+dev = [
+  "huggingface-hub==1.30.0",
+  "psutil==7.0.0",
+  "pytest==9.1.1",
+  "sacrebleu==2.5.1",
+  "torch==2.14.0",
+  "transformers==5.17.0",
+]
+lora = ["datasets==5.0.1", "peft==0.20.0", "torch==2.14.0", "transformers==5.17.0", "trl==1.13.0"]
+
+[project.scripts]
+capability-anatomy = "capability_anatomy.cli:entrypoint"
+
+[build-system]
+requires = ["hatchling==1.27.0"]
+build-backend = "release_backend"
+backend-path = ["scripts"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/capability_anatomy"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"schemas/experiment-config.v1.schema.json" = "capability_anatomy/_schemas/experiment-config.v1.schema.json"
+"schemas/evidence-manifest.v1.schema.json" = "capability_anatomy/_schemas/evidence-manifest.v1.schema.json"
+"schemas/metric-result.v1.schema.json" = "capability_anatomy/_schemas/metric-result.v1.schema.json"
+"schemas/transformation-recipe.v1.schema.json" = "capability_anatomy/_schemas/transformation-recipe.v1.schema.json"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]
+
+# The PEP 517 backend snapshots through scripts/export_standalone.py before
+# delegating archives to pinned Hatchling. No second file selection list.
+
+[dependency-groups]
+dev = [
+  "huggingface-hub==1.30.0",
+  "psutil==7.0.0",
+  "pytest==9.1.1",
+  "sacrebleu==2.5.1",
+  "torch==2.14.0",
+  "transformers==5.17.0",
+]
+analysis = [
+  "contourpy==1.4.0",
+  "cycler==0.12.1",
+  "fonttools==4.65.0",
+  "kiwisolver==1.5.1",
+  "matplotlib==3.11.2",
+  "numpy==2.5.3",
+  "packaging==26.3",
+  "pillow==12.3.0",
+  "pyparsing==3.3.2",
+  "python-dateutil==2.9.0.post0",
+  "six==1.17.0",
+]

@@ -1,0 +1,718 @@
+{
+  "files": [
+    {
+      "bytes": 1608,
+      "path": ".github/actions/acceptance/action.yml",
+      "sha256": "57e55a78dc44a24c4415d4063fc32d303b0100e4f54be8932d77cdf3532ecf6f",
+      "source_path": ".github/actions/acceptance/action.yml"
+    },
+    {
+      "bytes": 405,
+      "path": ".github/workflows/ci.yml",
+      "sha256": "f4ce69b443d48158519529055ab1654fb25ea897c83e4cb62a78e77a8bb0fa53",
+      "source_path": ".github/workflows/ci.yml"
+    },
+    {
+      "bytes": 1319,
+      "path": "CONTRIBUTING.md",
+      "sha256": "3bbe66c93193f79f9b3738c37abc1433d46475c0d2f95b714e6418946d1eb2e1",
+      "source_path": "CONTRIBUTING.md"
+    },
+    {
+      "bytes": 11358,
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "source_path": "LICENSE"
+    },
+    {
+      "bytes": 310,
+      "path": "NOTICE",
+      "sha256": "b99cec99f600fc5044b6eb59a638c68bde79ae38ac8825c66a79bf1eaa00b743",
+      "source_path": "NOTICE"
+    },
+    {
+      "bytes": 3530,
+      "path": "README.md",
+      "sha256": "b930297899b9945a9a87f5326a40e4546f9fca91512ed47f4f1227204c39609a",
+      "source_path": "README.md"
+    },
+    {
+      "bytes": 2113,
+      "path": "SECURITY.md",
+      "sha256": "9a5f2112f924b54cd49713d537b660b6a1dcd49256e2e080d51a4d66c98de5b0",
+      "source_path": "SECURITY.md"
+    },
+    {
+      "bytes": 949,
+      "path": "configs/examples/synthetic-scan.yaml",
+      "sha256": "69cd3f8f7fbdb30e15e5d8af8dc7863fbaa76c916ea15f1e909e7b6338584d53",
+      "source_path": "configs/examples/synthetic-scan.yaml"
+    },
+    {
+      "bytes": 4454,
+      "path": "docs/observability.md",
+      "sha256": "ac54ff2e069b9257147ba21d1fb175c01ebe42b73ae0bcc190463ee4fb8d7833",
+      "source_path": "docs/observability.md"
+    },
+    {
+      "bytes": 12160,
+      "path": "docs/operations.md",
+      "sha256": "dc63c7f8b9fd64451d0a7abdd7f579d027b5c77d3d7f16ce2e92d78ab56ee1f1",
+      "source_path": "docs/operations.md"
+    },
+    {
+      "bytes": 8153,
+      "path": "docs/reasons.md",
+      "sha256": "aa9eaf3d50143d30035fce88d393012dd1a234a6872ff23438c942120b457a49",
+      "source_path": "docs/reasons.md"
+    },
+    {
+      "bytes": 2170,
+      "path": "docs/release.md",
+      "sha256": "08d145ea615ac62a3fc3d18c823289ab136332cf7dcb1f190b9b0d6b4405b934",
+      "source_path": "docs/release.md"
+    },
+    {
+      "bytes": 3083,
+      "path": "docs/research-limits.md",
+      "sha256": "a9df696727f895e040dc11670adbb63286521d87aed0bba7cc8e77f9a55092e6",
+      "source_path": "docs/research-limits.md"
+    },
+    {
+      "bytes": 149,
+      "path": "fixtures/gate5m_external_plugin/external_gate5m_plugin-3.2.1.dist-info/METADATA",
+      "sha256": "20df822c6e26db83b08143d61730b1c7172c8ebd3b540e81274e1e1937cb95fa",
+      "source_path": "fixtures/gate5m_external_plugin/external_gate5m_plugin-3.2.1.dist-info/METADATA"
+    },
+    {
+      "bytes": 199,
+      "path": "fixtures/gate5m_external_plugin/external_gate5m_plugin-3.2.1.dist-info/entry_points.txt",
+      "sha256": "327636cf071ded7a6f9a1fffb9d6b7f6f40c4759aa0001c22e259f5c2af17b02",
+      "source_path": "fixtures/gate5m_external_plugin/external_gate5m_plugin-3.2.1.dist-info/entry_points.txt"
+    },
+    {
+      "bytes": 23,
+      "path": "fixtures/gate5m_external_plugin/external_gate5m_plugin-3.2.1.dist-info/top_level.txt",
+      "sha256": "e4bfcdf35dc4408edcad92a2de3a19e34fe8e9ebbd0e401aa3eff2f4c09153bc",
+      "source_path": "fixtures/gate5m_external_plugin/external_gate5m_plugin-3.2.1.dist-info/top_level.txt"
+    },
+    {
+      "bytes": 1278,
+      "path": "fixtures/gate5m_external_plugin/external_gate5m_plugin.py",
+      "sha256": "ff4b80d13c00427a3e667af10274dd59cc3f8879c5c72c39c200bae914eb34c9",
+      "source_path": "fixtures/gate5m_external_plugin/external_gate5m_plugin.py"
+    },
+    {
+      "bytes": 399,
+      "path": "fixtures/synthetic/manifest.json",
+      "sha256": "ecccaa7763895bda3f01822ecbb5c9f85ac6a69f8d2233c37cdc331a034cbeb9",
+      "source_path": "fixtures/synthetic/manifest.json"
+    },
+    {
+      "bytes": 1721,
+      "path": "pyproject.toml",
+      "sha256": "9d1f26a81ea373235be570b3df436f253f4b7abed5ba8c6c2afaa83d55b8b4e9",
+      "source_path": "pyproject.toml"
+    },
+    {
+      "bytes": 1726,
+      "path": "schemas/evidence-manifest.v1.schema.json",
+      "sha256": "df3ef6b634a15aa3014f6fba26776f7a2545f65d80d6c11cc62ff3359f98ccba",
+      "source_path": "schemas/evidence-manifest.v1.schema.json"
+    },
+    {
+      "bytes": 3989,
+      "path": "schemas/experiment-config.v1.schema.json",
+      "sha256": "b92e301ee7c61c2f5af5fbf199d9400d27e0795adef79c9e7533c6ba539b52ed",
+      "source_path": "schemas/experiment-config.v1.schema.json"
+    },
+    {
+      "bytes": 1290,
+      "path": "schemas/metric-result.v1.schema.json",
+      "sha256": "0ba162466aaa5a58bc1d270facfb96ba86d120dc8ca413a0b6ebd7ffbd55bf6b",
+      "source_path": "schemas/metric-result.v1.schema.json"
+    },
+    {
+      "bytes": 1677,
+      "path": "schemas/transformation-recipe.v1.schema.json",
+      "sha256": "9d56a8cf4f190507d600f0e3e86da62a252ac1afc3f7acfa4883b7c6bb48ee77",
+      "source_path": "schemas/transformation-recipe.v1.schema.json"
+    },
+    {
+      "bytes": 3629,
+      "path": "scripts/ci_acceptance.py",
+      "sha256": "685fea3bfffb1ef2f1d83e1a0c36e3367b4df8cc8da3950726f327764e18a7ac",
+      "source_path": "scripts/ci_acceptance.py"
+    },
+    {
+      "bytes": 16919,
+      "path": "scripts/export_standalone.py",
+      "sha256": "2f04bc5745f939b11ad5979b2ab54d5b1f1d709b32c10654dfcced1e1675e209",
+      "source_path": "scripts/export_standalone.py"
+    },
+    {
+      "bytes": 3839,
+      "path": "scripts/release_backend.py",
+      "sha256": "dd4a9c668590a29ccdbd1268658ca3228ce7e75f346db80dab7b55a99e4129a1",
+      "source_path": "scripts/release_backend.py"
+    },
+    {
+      "bytes": 4116,
+      "path": "scripts/update_reason_catalog.py",
+      "sha256": "cb196aa8b3aa103b9c3dd20c9690bf697642eb79b2fe33e11de7787433d21255",
+      "source_path": "scripts/update_reason_catalog.py"
+    },
+    {
+      "bytes": 10678,
+      "path": "scripts/verify_observability.py",
+      "sha256": "7ce128a7ea864192b1055d9adb01ac28df3fd2a49dc16b990c8f01c08dfe1413",
+      "source_path": "scripts/verify_observability.py"
+    },
+    {
+      "bytes": 9260,
+      "path": "scripts/verify_release.py",
+      "sha256": "5af72e92fdc72fb7521239f5a79d33c5fe32c94e0eb395888e26d22291025e99",
+      "source_path": "scripts/verify_release.py"
+    },
+    {
+      "bytes": 190,
+      "path": "src/capability_anatomy/__init__.py",
+      "sha256": "53beee8e6d34efa1fb0462e6ba8565f312f3d34f3958e835e771bf902178de36",
+      "source_path": "src/capability_anatomy/__init__.py"
+    },
+    {
+      "bytes": 7352,
+      "path": "src/capability_anatomy/authored_inputs.py",
+      "sha256": "b07b42e612edeaffadb6895456b974f89f34ad4a43ff74ac9adf810e49951c76",
+      "source_path": "src/capability_anatomy/authored_inputs.py"
+    },
+    {
+      "bytes": 21933,
+      "path": "src/capability_anatomy/cli.py",
+      "sha256": "f9925d2b5480f4c748e3393e95ae4d82f32eb107970966983fadb3a4f6461355",
+      "source_path": "src/capability_anatomy/cli.py"
+    },
+    {
+      "bytes": 4510,
+      "path": "src/capability_anatomy/config.py",
+      "sha256": "f8192e1b7e7c478b73ce72a3af11bf4964cbe7c9fb143496817139251477b781",
+      "source_path": "src/capability_anatomy/config.py"
+    },
+    {
+      "bytes": 7543,
+      "path": "src/capability_anatomy/credentials.py",
+      "sha256": "f2fe5d4e6b1a91e7a337e98a5dc826f30ad0e24cf00e7b13d8ff220dc7626c64",
+      "source_path": "src/capability_anatomy/credentials.py"
+    },
+    {
+      "bytes": 155,
+      "path": "src/capability_anatomy/datasets/__init__.py",
+      "sha256": "c9ed219382aa61e8767ee6cd62ba0f7e49ff69e6c133754b7ae80160f578a68f",
+      "source_path": "src/capability_anatomy/datasets/__init__.py"
+    },
+    {
+      "bytes": 4257,
+      "path": "src/capability_anatomy/datasets/phase5.py",
+      "sha256": "d438f2df27ebe34d0444ed571a845992c015a958d976b7b8e03a465854ecd4fb",
+      "source_path": "src/capability_anatomy/datasets/phase5.py"
+    },
+    {
+      "bytes": 3274,
+      "path": "src/capability_anatomy/datasets/synthetic.py",
+      "sha256": "4ca746246f95f6f8ae2c7319c27d3e36aedc67b1714bba4506e09303e2596285",
+      "source_path": "src/capability_anatomy/datasets/synthetic.py"
+    },
+    {
+      "bytes": 6117,
+      "path": "src/capability_anatomy/discovery.py",
+      "sha256": "06e158d91a389a2694c54cb6ba35ced41ec488f71d1d5774b9734c2a1bccfbbb",
+      "source_path": "src/capability_anatomy/discovery.py"
+    },
+    {
+      "bytes": 8654,
+      "path": "src/capability_anatomy/domain.py",
+      "sha256": "a030a312b6aed5213bf2c0c8e60fbf78fba250498817ce403c25b133aa7a9404",
+      "source_path": "src/capability_anatomy/domain.py"
+    },
+    {
+      "bytes": 1263,
+      "path": "src/capability_anatomy/errors.py",
+      "sha256": "22533064012715c48a60dbfa35f2b3ae5cd026464f42de1ceaa23eb78b820725",
+      "source_path": "src/capability_anatomy/errors.py"
+    },
+    {
+      "bytes": 75,
+      "path": "src/capability_anatomy/evaluations/__init__.py",
+      "sha256": "8ad4cbef9d0c1f4363e1efe7da7cca264b0a45b70e4947729807b0f394ed7fdf",
+      "source_path": "src/capability_anatomy/evaluations/__init__.py"
+    },
+    {
+      "bytes": 4569,
+      "path": "src/capability_anatomy/evaluations/executor.py",
+      "sha256": "b90a99f3bb1abc4bedd21a7bce0e81e3eed771fe1e0695805c82a59080c4eb16",
+      "source_path": "src/capability_anatomy/evaluations/executor.py"
+    },
+    {
+      "bytes": 285,
+      "path": "src/capability_anatomy/evaluations/plugins/__init__.py",
+      "sha256": "52b56053598c3361d89d9bcb07f70470dc91c0113cd72d97d4e90cb510e1caba",
+      "source_path": "src/capability_anatomy/evaluations/plugins/__init__.py"
+    },
+    {
+      "bytes": 815,
+      "path": "src/capability_anatomy/evaluations/plugins/chat_exact.py",
+      "sha256": "1fc33eac1af766f977523c16cff6bb2f623e9ec4c56691f86b87084d47ffb5ea",
+      "source_path": "src/capability_anatomy/evaluations/plugins/chat_exact.py"
+    },
+    {
+      "bytes": 10460,
+      "path": "src/capability_anatomy/evaluations/plugins/phase5.py",
+      "sha256": "386a63282a5c30008e8beb926bbd1f271169c21519018d23e328738dd66d213a",
+      "source_path": "src/capability_anatomy/evaluations/plugins/phase5.py"
+    },
+    {
+      "bytes": 2292,
+      "path": "src/capability_anatomy/evaluations/plugins/synthetic.py",
+      "sha256": "33077d93413f1d1eeca42f629ff511249fd552182ac84cd55660112e0eaf4983",
+      "source_path": "src/capability_anatomy/evaluations/plugins/synthetic.py"
+    },
+    {
+      "bytes": 4363,
+      "path": "src/capability_anatomy/evaluations/plugins/tool_calling.py",
+      "sha256": "5ce28eb746210d18916d78049515a8972e1e6a91bc3a41ca59e3ead7e2a1c5a1",
+      "source_path": "src/capability_anatomy/evaluations/plugins/tool_calling.py"
+    },
+    {
+      "bytes": 2928,
+      "path": "src/capability_anatomy/evaluations/reduction.py",
+      "sha256": "2d5e9c6846d88081407423f120501e5406bce37bc653199914f0cde30f486c03",
+      "source_path": "src/capability_anatomy/evaluations/reduction.py"
+    },
+    {
+      "bytes": 287,
+      "path": "src/capability_anatomy/execution/__init__.py",
+      "sha256": "706ad3a5d1942aaff3916bed95fddb0716dfd2cf408e6dce02995fd8090e1679",
+      "source_path": "src/capability_anatomy/execution/__init__.py"
+    },
+    {
+      "bytes": 2305,
+      "path": "src/capability_anatomy/execution/controls.py",
+      "sha256": "b7821d97b6b99c4401bb10025e5fbcb73f1a9d1c89aad1cfda5dec323b2b988e",
+      "source_path": "src/capability_anatomy/execution/controls.py"
+    },
+    {
+      "bytes": 22798,
+      "path": "src/capability_anatomy/execution/core_evidence.py",
+      "sha256": "218c1166e98bf9f74e1f6033986a2125110f0fc2366983e97c4b840284269c57",
+      "source_path": "src/capability_anatomy/execution/core_evidence.py"
+    },
+    {
+      "bytes": 2740,
+      "path": "src/capability_anatomy/execution/evidence_inventory.py",
+      "sha256": "92e939d0270cfd8afe2eb53aab5fb3dae9ed58d8bdf94da7f7574d0463d17be4",
+      "source_path": "src/capability_anatomy/execution/evidence_inventory.py"
+    },
+    {
+      "bytes": 6055,
+      "path": "src/capability_anatomy/execution/evidence_json.py",
+      "sha256": "31396b2585487255b2aafe2da517cdcf6968c261e6a230520d283055b053763a",
+      "source_path": "src/capability_anatomy/execution/evidence_json.py"
+    },
+    {
+      "bytes": 778,
+      "path": "src/capability_anatomy/execution/evidence_limits.py",
+      "sha256": "b9ced9ffc15e6ede8599a6cc8304cdcea7b78c600d8b9b35c85e1c189aafd8e0",
+      "source_path": "src/capability_anatomy/execution/evidence_limits.py"
+    },
+    {
+      "bytes": 73169,
+      "path": "src/capability_anatomy/execution/orchestrator.py",
+      "sha256": "9241f11609a6953dad1157d5b4460861ec6ef14017daeb968deb186794d9d9e7",
+      "source_path": "src/capability_anatomy/execution/orchestrator.py"
+    },
+    {
+      "bytes": 3690,
+      "path": "src/capability_anatomy/execution/phase5_artifacts.py",
+      "sha256": "5fa452246105b40f00e4e443c933cc94ccd667fcd354f1c070d36baa704cd9da",
+      "source_path": "src/capability_anatomy/execution/phase5_artifacts.py"
+    },
+    {
+      "bytes": 71157,
+      "path": "src/capability_anatomy/execution/phase5_campaign.py",
+      "sha256": "0fb9afa04183828499c8027efe2c45f36941185c0d3aa8783596348b14131c91",
+      "source_path": "src/capability_anatomy/execution/phase5_campaign.py"
+    },
+    {
+      "bytes": 11504,
+      "path": "src/capability_anatomy/execution/runner.py",
+      "sha256": "677d22b364ac43fa698f6845ab7af8d9332ebe893b17bab5facb6faa7b609b68",
+      "source_path": "src/capability_anatomy/execution/runner.py"
+    },
+    {
+      "bytes": 19729,
+      "path": "src/capability_anatomy/execution/secure_fs.py",
+      "sha256": "4a14f31f68fa136585b4a07a3d3539e43d5416098a834b9db2297414946103c4",
+      "source_path": "src/capability_anatomy/execution/secure_fs.py"
+    },
+    {
+      "bytes": 8385,
+      "path": "src/capability_anatomy/execution/store.py",
+      "sha256": "26c062befdeae96e77bc649da78e7c3a78c4ce4161baa623167a055e0e99789e",
+      "source_path": "src/capability_anatomy/execution/store.py"
+    },
+    {
+      "bytes": 65,
+      "path": "src/capability_anatomy/interventions/__init__.py",
+      "sha256": "0b06937b5b27819c5f7e2786db77fc51f860634d4d5bd68806aeb0941402ebc2",
+      "source_path": "src/capability_anatomy/interventions/__init__.py"
+    },
+    {
+      "bytes": 4335,
+      "path": "src/capability_anatomy/interventions/block_bypass.py",
+      "sha256": "3fe3b2eb8cbdbc0d75bafb4aff73f5a331bae3e2054323c67ceb80a42ddc92bf",
+      "source_path": "src/capability_anatomy/interventions/block_bypass.py"
+    },
+    {
+      "bytes": 203,
+      "path": "src/capability_anatomy/models/__init__.py",
+      "sha256": "6980c1f9f03ac29b6856168dc0dabdefe4e6cc4be2bf538e084e5f1ca903d824",
+      "source_path": "src/capability_anatomy/models/__init__.py"
+    },
+    {
+      "bytes": 3199,
+      "path": "src/capability_anatomy/models/base.py",
+      "sha256": "ea86b924be95d5ec62f04c0eed03bb89fb3df0341f7511683bdf0367fa93e554",
+      "source_path": "src/capability_anatomy/models/base.py"
+    },
+    {
+      "bytes": 81,
+      "path": "src/capability_anatomy/models/plugins/__init__.py",
+      "sha256": "522dee4c10c79bb672154c74b313344864c1632e6ceda5a6e4145913316dce94",
+      "source_path": "src/capability_anatomy/models/plugins/__init__.py"
+    },
+    {
+      "bytes": 19418,
+      "path": "src/capability_anatomy/models/plugins/huggingface.py",
+      "sha256": "9abd4566b9d48131f6023311a0b54be3244d399be053b45b4d0a416b3d99b924",
+      "source_path": "src/capability_anatomy/models/plugins/huggingface.py"
+    },
+    {
+      "bytes": 601,
+      "path": "src/capability_anatomy/models/plugins/qwen3.py",
+      "sha256": "e9eea3b37176393d441b12754f43a9a12274d78949a58bfa175fc8484df6f118",
+      "source_path": "src/capability_anatomy/models/plugins/qwen3.py"
+    },
+    {
+      "bytes": 3407,
+      "path": "src/capability_anatomy/models/plugins/synthetic.py",
+      "sha256": "97c73cc11878d558d467bdcf89ba7c9483e07564b15c987fe57633a00f907a48",
+      "source_path": "src/capability_anatomy/models/plugins/synthetic.py"
+    },
+    {
+      "bytes": 11952,
+      "path": "src/capability_anatomy/phase5_protocol.py",
+      "sha256": "58e970d431249ecd932dce519336af4df2ea83fe150d3bf8c81e17514e1e1b6a",
+      "source_path": "src/capability_anatomy/phase5_protocol.py"
+    },
+    {
+      "bytes": 3650,
+      "path": "src/capability_anatomy/protocols.py",
+      "sha256": "e15021673cbe9866d2a0ef8e44791870e07d8dde0d07856f84968fd1e3a58cf0",
+      "source_path": "src/capability_anatomy/protocols.py"
+    },
+    {
+      "bytes": 1879,
+      "path": "src/capability_anatomy/registry.py",
+      "sha256": "47de4e8312027f1c6787a986b4d676ea94e2e721b231d6ec7db5f0ebb12cb403",
+      "source_path": "src/capability_anatomy/registry.py"
+    },
+    {
+      "bytes": 5033,
+      "path": "src/capability_anatomy/review_policy.py",
+      "sha256": "282020f5707fa650f4b29f81f2c2a788d2dd99094a91f27d54677f664860a537",
+      "source_path": "src/capability_anatomy/review_policy.py"
+    },
+    {
+      "bytes": 12258,
+      "path": "src/capability_anatomy/run_telemetry.py",
+      "sha256": "a4494486b327299448c0ec0c7e59e6780b9de4296798169d067fd5a3e0bcb584",
+      "source_path": "src/capability_anatomy/run_telemetry.py"
+    },
+    {
+      "bytes": 1975,
+      "path": "src/capability_anatomy/runtime.py",
+      "sha256": "28bd084b539a885a185a3eedba0c72104342ee128342f80372bd054c597517d8",
+      "source_path": "src/capability_anatomy/runtime.py"
+    },
+    {
+      "bytes": 2705,
+      "path": "src/capability_anatomy/serialization.py",
+      "sha256": "aa359b15715e96cbd6ee0a128c6a8067b63f8946d10be37defbae2ba6c8c1caf",
+      "source_path": "src/capability_anatomy/serialization.py"
+    },
+    {
+      "bytes": 4460,
+      "path": "src/capability_anatomy/telemetry.py",
+      "sha256": "559611c3f15ea78ad337601ab32cddf101ac180d073c81911ca36c16a0252621",
+      "source_path": "src/capability_anatomy/telemetry.py"
+    },
+    {
+      "bytes": 24349,
+      "path": "tests/test_capability_anatomy_gate5m.py",
+      "sha256": "72fd73621e2caa6b35c108c375baba5a3b28ed0e87ccee2a69b43e0a656ace2d",
+      "source_path": "tests/test_capability_anatomy_gate5m.py"
+    },
+    {
+      "bytes": 13224,
+      "path": "tests/test_capability_anatomy_phase1.py",
+      "sha256": "1bec005bc63405529af553da083a3c490b0405193a243009025827f01723cb09",
+      "source_path": "tests/test_capability_anatomy_phase1.py"
+    },
+    {
+      "bytes": 23226,
+      "path": "tests/test_capability_anatomy_phase2.py",
+      "sha256": "ee0f0213e966cb978689cccf59ae56f038be8f7fa521a29130308abd55554d98",
+      "source_path": "tests/test_capability_anatomy_phase2.py"
+    },
+    {
+      "bytes": 9472,
+      "path": "tests/test_capability_anatomy_phase3.py",
+      "sha256": "a601cc0e807a060e1bd8a00ef45c3d6283340666a1de4f12435cdfcc10497f6d",
+      "source_path": "tests/test_capability_anatomy_phase3.py"
+    },
+    {
+      "bytes": 26447,
+      "path": "tests/test_capability_anatomy_phase4.py",
+      "sha256": "c9fcd5b56234b23b8641607eca1cb74ca7f963147aee64b10f93fc716ed0ff90",
+      "source_path": "tests/test_capability_anatomy_phase4.py"
+    },
+    {
+      "bytes": 53377,
+      "path": "tests/test_capability_anatomy_phase5_campaign.py",
+      "sha256": "338d85f1f9d666c9e16432fa7d64d6288503bdcd8588bf1afcb4119abdc3606b",
+      "source_path": "tests/test_capability_anatomy_phase5_campaign.py"
+    },
+    {
+      "bytes": 26929,
+      "path": "tests/test_capability_anatomy_phase5_public.py",
+      "sha256": "cb8b18993092e74fba0dab72afec671d4c87e9087e1ea9ad4e1913b1a6bd419e",
+      "source_path": "tests/test_capability_anatomy_phase5_public.py"
+    },
+    {
+      "bytes": 16751,
+      "path": "tests/test_release_cli.py",
+      "sha256": "dd6f09395aa25516223a267d0ecac2d9b1bef4989f498dcbe06ccc5ce8284ee5",
+      "source_path": "tests/test_release_cli.py"
+    },
+    {
+      "bytes": 7786,
+      "path": "tests/test_release_dependencies.py",
+      "sha256": "e0c220e041bea52892d560b9443825671b0d6919e4d05e5650e001096c8de9b2",
+      "source_path": "tests/test_release_dependencies.py"
+    },
+    {
+      "bytes": 12414,
+      "path": "tests/test_release_evaluation.py",
+      "sha256": "65c261df38a08bcd6b24e632d7cb84ec5569a7aa27a6a0884b497cbff238e236",
+      "source_path": "tests/test_release_evaluation.py"
+    },
+    {
+      "bytes": 16743,
+      "path": "tests/test_release_export.py",
+      "sha256": "a58c087e47c08351d0fb4a727fb603b3cdaafa38163860e1e7f6b1a0730b3b42",
+      "source_path": "tests/test_release_export.py"
+    },
+    {
+      "bytes": 5002,
+      "path": "tests/test_release_final_diagnostics.py",
+      "sha256": "856d9cd018359e85d915ea8963d1385a62b35ffb0ecebf005ff47a87669a7f44",
+      "source_path": "tests/test_release_final_diagnostics.py"
+    },
+    {
+      "bytes": 4760,
+      "path": "tests/test_release_final_inputs.py",
+      "sha256": "fb7b37ae84227a51e67d66734d11652efe02e2f75931baf94e620c8a1a9058d3",
+      "source_path": "tests/test_release_final_inputs.py"
+    },
+    {
+      "bytes": 13380,
+      "path": "tests/test_release_final_packaging.py",
+      "sha256": "77d13f8849b0797d6f5f82e994c80498256bb18355604d46ec8f647185589a4c",
+      "source_path": "tests/test_release_final_packaging.py"
+    },
+    {
+      "bytes": 16719,
+      "path": "tests/test_release_final_trace.py",
+      "sha256": "5e1c925f529ba77557ed135bcd1037a3a7680e8298ddb4537ede989a06f6d9b2",
+      "source_path": "tests/test_release_final_trace.py"
+    },
+    {
+      "bytes": 20001,
+      "path": "tests/test_release_inputs.py",
+      "sha256": "cee0e69d649162ea0c0abc579d09f00a24309e505bbe382314113c0310559bcd",
+      "source_path": "tests/test_release_inputs.py"
+    },
+    {
+      "bytes": 15652,
+      "path": "tests/test_release_lifecycle.py",
+      "sha256": "5b70d44be4c6caec8d9372b82863dd5e352d3ee62ad685c66266e0515013aff9",
+      "source_path": "tests/test_release_lifecycle.py"
+    },
+    {
+      "bytes": 6462,
+      "path": "tests/test_release_model_profiles.py",
+      "sha256": "19ed1158c9151ce6e7b7ef904fac78cb394306642e3bdc0be8261d6b3a5fae4a",
+      "source_path": "tests/test_release_model_profiles.py"
+    },
+    {
+      "bytes": 2828,
+      "path": "tests/test_release_observability.py",
+      "sha256": "a726c960817d6f42b31a8aeccba6c0fc510c3d6293b748985865d805fcfe8c76",
+      "source_path": "tests/test_release_observability.py"
+    },
+    {
+      "bytes": 9629,
+      "path": "tests/test_release_phase5_review.py",
+      "sha256": "c822e82c3f48b36e396f0ad47f596b8e86778dacf4aadc1cbdd2317644d80415",
+      "source_path": "tests/test_release_phase5_review.py"
+    },
+    {
+      "bytes": 20714,
+      "path": "tests/test_release_portable_campaign.py",
+      "sha256": "ab798cc5bf2bc33b285bcaee4a446cbd97708716d15e92a281f9a3dcc6c3222a",
+      "source_path": "tests/test_release_portable_campaign.py"
+    },
+    {
+      "bytes": 12848,
+      "path": "tests/test_release_review_evidence.py",
+      "sha256": "7b6505b66340910a7e3869cf1ea7ff8ef6faacc2705d46565b08f9a9766dbb5a",
+      "source_path": "tests/test_release_review_evidence.py"
+    },
+    {
+      "bytes": 3404,
+      "path": "tests/test_release_review_inputs.py",
+      "sha256": "99afd0739eeb058219964c20bae181e14850af6d377ce7fd08c080e0a333dec5",
+      "source_path": "tests/test_release_review_inputs.py"
+    },
+    {
+      "bytes": 3278,
+      "path": "tests/test_release_review_policy.py",
+      "sha256": "0f46c90c06a66b104875947196559b7995793ab416271c47d43c9ea04c82bc35",
+      "source_path": "tests/test_release_review_policy.py"
+    },
+    {
+      "bytes": 11710,
+      "path": "tests/test_release_review_storage.py",
+      "sha256": "e6b81db3778776d0e4ff0b9f40e640f8fca73741a3ed1b9ae3de27e3eac71b4f",
+      "source_path": "tests/test_release_review_storage.py"
+    },
+    {
+      "bytes": 17518,
+      "path": "tests/test_release_review_telemetry.py",
+      "sha256": "05ba1d0d30416700b1a6d21c67bbc8f8745054e89f5dc21331d99641d51ac5d9",
+      "source_path": "tests/test_release_review_telemetry.py"
+    },
+    {
+      "bytes": 13223,
+      "path": "tests/test_release_round2_density.py",
+      "sha256": "1d164829258c0c71ee41bb37c39149aad3601b827cd3bf2e4f9976aa79306767",
+      "source_path": "tests/test_release_round2_density.py"
+    },
+    {
+      "bytes": 7982,
+      "path": "tests/test_release_round2_recovery.py",
+      "sha256": "19e95ce51c70983d542e7a0e6360b55ef357ed9ea37fef248439077a675674f3",
+      "source_path": "tests/test_release_round2_recovery.py"
+    },
+    {
+      "bytes": 3401,
+      "path": "tests/test_release_score_diagnostics.py",
+      "sha256": "6f181b2a254adfdfe973e09108fe130e4ab1d4f7a38b65bbfd4551e4555c843e",
+      "source_path": "tests/test_release_score_diagnostics.py"
+    },
+    {
+      "bytes": 2407,
+      "path": "tests/test_release_sdist_privacy.py",
+      "sha256": "227b72897db46fff8f8ff20358bcc8f8bcfc3cf6c5e158af069289404d77124b",
+      "source_path": "tests/test_release_sdist_privacy.py"
+    },
+    {
+      "bytes": 13311,
+      "path": "tests/test_release_storage.py",
+      "sha256": "b117105bfb20a1584d65d49abb4683e395591a54c560872136ccfb8a62028c00",
+      "source_path": "tests/test_release_storage.py"
+    },
+    {
+      "bytes": 178628,
+      "path": "uv.lock",
+      "sha256": "449c0450bc164f7f6347bd9bcd75f6713d949aa32eca03d35497c3213966d59a",
+      "source_path": "uv.lock"
+    }
+  ],
+  "license_present": true,
+  "release_status": "requires_release_review",
+  "schema_version": "capability-anatomy/source-export/v1",
+  "source_tree_sha256": "84476a1dbc168ed11fb2e7aa9eabf2dfea45251bcf925148bd7df212c04c5741",
+  "tests": {
+    "boundary": "Generic package contracts and release regressions are included. Historical prototype, data materialization, private inventory and full-model evidence tests remain in the private research suite; no runtime pytest exclusions are used.",
+    "excluded_private_files": [
+      "test_assemble.py",
+      "test_audit.py",
+      "test_c1.py",
+      "test_capability_anatomy_phase0.py",
+      "test_capability_anatomy_phase5.py",
+      "test_cli.py",
+      "test_dataset.py",
+      "test_evaluators.py",
+      "test_legacy_phase2_bypass.py",
+      "test_lora_data.py",
+      "test_lora_preregistration.py",
+      "test_manifest.py",
+      "test_phase0b_benchmarks.py",
+      "test_phase0b_gates.py",
+      "test_phase0b_partitions.py",
+      "test_phase0b_qualification.py",
+      "test_phase0b_qualify.py",
+      "test_phase0b_ruler.py",
+      "test_planning.py",
+      "test_results.py",
+      "test_runner_selection.py",
+      "test_simpleqa.py",
+      "test_telemetry.py",
+      "test_tool_causal.py"
+    ],
+    "included_files": [
+      "test_capability_anatomy_gate5m.py",
+      "test_capability_anatomy_phase1.py",
+      "test_capability_anatomy_phase2.py",
+      "test_capability_anatomy_phase3.py",
+      "test_capability_anatomy_phase4.py",
+      "test_capability_anatomy_phase5_campaign.py",
+      "test_capability_anatomy_phase5_public.py",
+      "test_release_cli.py",
+      "test_release_dependencies.py",
+      "test_release_evaluation.py",
+      "test_release_export.py",
+      "test_release_final_diagnostics.py",
+      "test_release_final_inputs.py",
+      "test_release_final_packaging.py",
+      "test_release_final_trace.py",
+      "test_release_inputs.py",
+      "test_release_lifecycle.py",
+      "test_release_model_profiles.py",
+      "test_release_observability.py",
+      "test_release_phase5_review.py",
+      "test_release_portable_campaign.py",
+      "test_release_review_evidence.py",
+      "test_release_review_inputs.py",
+      "test_release_review_policy.py",
+      "test_release_review_storage.py",
+      "test_release_review_telemetry.py",
+      "test_release_round2_density.py",
+      "test_release_round2_recovery.py",
+      "test_release_score_diagnostics.py",
+      "test_release_sdist_privacy.py",
+      "test_release_storage.py"
+    ]
+  }
+}

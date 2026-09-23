@@ -1,0 +1,15 @@
+# Research status and interpretation
+
+This is a research alpha. A useful measurement tool can be released before its motivating hypothesis succeeds. The project does not claim a successful pruning result.
+
+Temporary component sensitivity differs from a valid permanent transformation. A synthetic neutral component verifies mechanics only. Tiny random Llama, Mistral and Qwen3 tests verify actual library execution, cache shape, intervention effects and restoration only.
+
+Scorer version 2 preserves meaning-bearing characters and distinguishes explicit abstention from malformed output. Frozen version 1 evidence remains reconstructable under its original rules and must not be relabeled as version 2 or used as proof of corrected scoring. Historical approvals do not authorize changed source, dependencies, model profiles or protocols.
+
+Repeat dispersion is separate from uncertainty over independent records. Version 2 exposes distinct records/groups and labels sample uncertainty and retained competence as unestablished. A zero-competence baseline or one-group baseline is inconclusive. Before making a positive retention/generalization claim, preregister competence floors, adequate independent samples, paired uncertainty and multiple-comparison treatment. Keep discovery and validation separate; do not select thresholds from validation outcomes.
+
+Phase 5 campaign execution requires a newly frozen protocol and reviewed source checkout. Protocol version 2 freezes an explicit review policy: a policy identity and allowed HTTPS origins and review path prefixes. Authorization version 2 binds the policy digest, protocol digest, actual clean Git source, selected configuration and dataset artifacts to the approved commit. A fork can configure its own review host without changing the gate implementation. Version 1 approvals remain valid only for offline reconstruction of historical evidence. Installing a wheel supports generic experiments and offline reporting; it does not transport campaign authorization. Run governed campaigns from a clean editable source checkout with configuration under `configs/experiments`. A review URL is an auditable reference, not a cryptographic reviewer identity. The operator controls the local approval file. Forks must establish their own review policy rather than reuse another repository's approval.
+
+Scorer 2 observations retain a bounded abstention reason (explicit empty call list, explicit refusal form, empty/invalid type, malformed/unrecognized output, or a tool invocation), without retaining raw model output. Version 1 reconstruction preserves its original numeric semantics, including the historical difference between discovery tolerance and strict validation thresholds. New scorer 2 campaigns use the same tolerance-aware comparator at both stages.
+
+The transformation-recipe schema is a reserved interchange format, covered by schema tests and included by `doctor`. No transformation engine or permanent model rewrite is implemented or implied by its presence. Temporary block bypass remains the executable intervention.
