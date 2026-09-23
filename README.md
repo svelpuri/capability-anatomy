@@ -11,7 +11,7 @@ by Srinivas Velpuri (Andyur AI).
 Capability Anatomy measures behavioral changes when individual transformer
 blocks are bypassed. This artifact analyzes retained Qwen3-0.6B and Qwen3-1.7B
 measurements of tool selection, argument binding, full-call correctness, and
-collateral perplexity. [Paper materials and status](paper/README.md).
+collateral perplexity. [Manuscript source and compilation instructions](paper/README.md).
 
 ## Reproduce the analysis
 

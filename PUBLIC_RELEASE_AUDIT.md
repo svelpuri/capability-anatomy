@@ -1,8 +1,10 @@
 # Public research snapshot audit
 
-**Status: software/evidence preparation verified; paper release blocked; repository must remain private.**
-The requested paper release cannot be completed until authoritative LaTeX,
-bibliography, diagrams and paper figures are available and compile successfully.
+**Status: manuscript imported unchanged; repository remains private pending final release review.**
+The authoritative archive supplies LaTeX with manual references, five PNG
+figures/diagrams and submission notes. Each file is preserved byte-for-byte;
+no separate bibliography file is required. Compilation and hosted checks are
+tracked separately from source preservation.
 The `v0.1.0-paper` tag has not been created.
 
 - Source commit: `6e3ab58739857f46c971342a89c34d71445c003f`.
@@ -11,7 +13,8 @@ The `v0.1.0-paper` tag has not been created.
 - Files included: curated research software and tests; 32 unchanged selected
   evidence files plus two public manifests; portable specificity and split-half
   analysis; expected numerical results; four SVG/PNG figure pairs; researcher
-  documentation. The final inventory is `PUBLIC-MANIFEST.json`.
+  documentation; the seven unchanged manuscript source files and their import
+  manifest. The final inventory is `PUBLIC-MANIFEST.json`.
 - Files intentionally excluded: unrelated platform source/product documents,
   old experiment families, benchmark text/raw answers, model weights, task
   caches, research/release traces not needed for numerical reproduction,
@@ -22,8 +25,8 @@ The `v0.1.0-paper` tag has not been created.
   provenance inspected against pinned upstream licenses. WikiText's pinned
   license card is inconsistent; no benchmark text is redistributed. See
   `data/paper/LICENSES.md` for source-by-source disposition.
-- Local-path scan: 186-file final snapshot: zero private absolute paths, private review URLs, or private-key markers; broad case-insensitive terms reviewed in 75 files as code, tests, research token-count metadata, or scanner/inventory summaries.
-- Model-weight scan: zero weight-format files in the 186-file final snapshot; binary figures inspected.
+- Local-path scan: pre-manuscript 186-file snapshot: zero private absolute paths, private review URLs, or private-key markers; broad case-insensitive terms reviewed in 75 files as code, tests, research token-count metadata, or scanner/inventory summaries.
+- Model-weight scan: zero weight-format files in the pre-manuscript 186-file snapshot; binary figures inspected.
 - Clean-checkout tests: independent detached clean checkout passed 640 tests at the initial preparation commit, zero skips. After the integrity-check regression, the independent detached source suite passed 642 tests in normal order and 642 in reverse order, zero skips. Canonical source and source-distribution suites each passed 640 in normal and reverse order, zero skips; installed wheel lifecycle and official Collector readback passed (104 receipt spans plus two exporter decisions).
 - Analysis reproduction: all seven retained CSV tables, robustness JSON and regenerated NPZ matched historical
   bytes; all headline numbers and split-half distributions match. Scalar first
@@ -34,7 +37,10 @@ The `v0.1.0-paper` tag has not been created.
   evidence, not full historical execution/approval verification.
 - Known limitations: tiny empirical sample, conditional general-damage proxy,
   discovery reuse, no validation interventions, duplicated 1.7B binding/full-call
-  outcomes, no one-command historical inference replay, missing manuscript sources.
+  outcomes, no one-command historical inference replay. The manuscript also retains
+  a historical aggregate Phase0B paragraph whose inputs are outside the primary
+  Phase5 reproduction. Original submission notes contain an older affiliation
+  instruction; see `paper/README.md`.
 
 No private monorepo Git history is included.
 
@@ -66,5 +72,7 @@ verification JSON; they are not claimed to be OTel-instrumented services.
 Runtime telemetry is verified through the real collector gate.
 
 Hosted Linux/macOS CI may still be running on the draft PR; local macOS gate
-results do not constitute a hosted Linux pass. Missing manuscript sources and
-any unfinished hosted checks remain visible release limitations.
+results do not constitute a hosted Linux pass. The workflow now includes a
+paper job for integrity, numerical reproduction and two-pass pdflatex compilation
+with shell escape disabled. Any unfinished hosted checks remain visible release
+limitations.

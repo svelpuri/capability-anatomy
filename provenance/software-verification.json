@@ -30,7 +30,7 @@
   "limitations": [
     "software distributions intentionally omit research data/analysis",
     "does not certify fresh model inference",
-    "authoritative manuscript source missing"
+    "historical aggregate Phase0B paragraph is outside the primary Phase5 numerical reproduction"
   ],
   "research_snapshot_tests": {
     "normal": 642,

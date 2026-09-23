@@ -19,8 +19,13 @@
   external reader can verify the undistributed archive.
 - Regenerable bootstrap NPZ SHA-256:
   `a68048c9875ae4a11e23baf791d5134dfa2b30d2626e37b1644e1fb8660256d7`.
+- Authoritative manuscript archive SHA-256:
+  `9d46c62f8fe759d81f54ba65f05c529a0fe588b358ddd985fa895bfe84579d4c`.
+  All seven files are unchanged under `paper/`; `paper/SOURCE-MANIFEST.json`
+  records their original hashes. Manual references remain in `main.tex`.
+  No reference PDF was present in the supplied archive.
 - Final analysis/release tag: **not created**. The intended `v0.1.0-paper` tag
-  is blocked until manuscript source and final release review are complete.
+  awaits final release review and completed hosted checks.
   No tag hash is fabricated or inferred from a preparation commit.
 
 The public tree is a selected source snapshot with new paper-facing documentation

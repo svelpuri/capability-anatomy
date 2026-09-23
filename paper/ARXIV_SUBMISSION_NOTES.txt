@@ -1,0 +1,29 @@
+ARXIV READINESS STATUS
+
+Working title:
+Layerwise Behavioral Sensitivity in LLMs: Stability, Scale, and the Limits of Capability Localization
+
+Empirical scope:
+Qwen3-0.6B and Qwen3-1.7B. The title is methodological/general; the abstract and methods state the one-family empirical limitation explicitly.
+
+READY:
+- Scientific claim boundary aligned to audited evidence.
+- Preserved/verified 1.7B bundle and hashes.
+- Zero-inference specificity analysis completed and versioned at commit 9c90e4c.
+- Primary numbers incorporated into manuscript.
+- Figures/diagrams included.
+- Limitations and reproducibility statement included.
+- PDF compiles cleanly with pdflatex.
+- Source package contains only manuscript-required files.
+
+FINAL AUTHOR CHECKS BEFORE SUBMISSION:
+1. Confirm author name exactly as desired on arXiv.
+2. Confirm affiliation: currently "Independent Researcher".
+3. Decide whether to include an email address and/or ORCID.
+4. Decide artifact visibility strategy: private repository wording vs. a scrubbed public artifact/repository link.
+5. Do one final independent scientific read focused on claims/statistics/citations.
+6. Confirm arXiv primary category (likely cs.LG; cs.CL is a plausible cross-list depending on positioning).
+7. Check each bibliography item against the final cited version/venue metadata.
+
+RECOMMENDATION:
+The manuscript is technically arXiv-submittable after the author identity/affiliation/artifact-link decisions and one final scientific proofread. A broader conference claim would need additional held-out intervention data and preferably another model family.

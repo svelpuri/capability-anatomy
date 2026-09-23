@@ -14,8 +14,8 @@
     },
     {
       "path": ".github/workflows/ci.yml",
-      "bytes": 405,
-      "sha256": "f4ce69b443d48158519529055ab1654fb25ea897c83e4cb62a78e77a8bb0fa53"
+      "bytes": 2141,
+      "sha256": "8be2f96be8ebd060091ab4668b32e3f0b220d793f9f9184a834c887daa06e5d0"
     },
     {
       "path": ".gitignore",
@@ -44,18 +44,18 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 2678,
-      "sha256": "9c5b1e8e3748e664fada476708cb30f8bced09629420fdd03db11bda88f407c5"
+      "bytes": 2981,
+      "sha256": "48ffbdb64fab0b47cc219420c33d2cb2ef34bf7a7cb7882898a685f173405a31"
     },
     {
       "path": "PUBLIC_RELEASE_AUDIT.md",
-      "bytes": 5497,
-      "sha256": "cf62cbdb0a05c07824811a78f0c7634150544f1e5b43c1c6fe368b29e195473d"
+      "bytes": 6001,
+      "sha256": "c995935503ac78c3b32f5c4e28735726fc72279a14061e89deb2dfb41b060456"
     },
     {
       "path": "README.md",
-      "bytes": 4238,
-      "sha256": "0d8cc0d10560a288e694f7b1554021730decf354bee837271920fd169822957c"
+      "bytes": 4258,
+      "sha256": "8e34124e44c1fee58d2475598a10519f910ec0c3f15cd660c24d94f923730dad"
     },
     {
       "path": "REPRODUCIBILITY.md",
@@ -443,14 +443,54 @@
       "sha256": "ecccaa7763895bda3f01822ecbb5c9f85ac6a69f8d2233c37cdc331a034cbeb9"
     },
     {
+      "path": "paper/ARXIV_SUBMISSION_NOTES.txt",
+      "bytes": 1595,
+      "sha256": "214262ab99e29bf7753e529f5edd8e79c13cc6df600c0bebd52243908288b7ad"
+    },
+    {
       "path": "paper/README.md",
-      "bytes": 762,
-      "sha256": "047e9ecd758f48cad77b41755ae4cbfbbb3ac4a9de215347eed81283d914e4c2"
+      "bytes": 2654,
+      "sha256": "290a123c03ab7dcdd10aee909944eb42662adbd98c34d9f206d8176f1777174d"
+    },
+    {
+      "path": "paper/SOURCE-MANIFEST.json",
+      "bytes": 1800,
+      "sha256": "c53617ce452dba0a9d1f4215bf379b11a6ad15d2827f69bef57b375c9f0fe280"
+    },
+    {
+      "path": "paper/figure1_workflow.png",
+      "bytes": 123487,
+      "sha256": "28d5e1745f19426a46dac877a9b75d23f5772198830d02987dcd9673009e6d3a"
+    },
+    {
+      "path": "paper/figure2_claim_boundary.png",
+      "bytes": 89563,
+      "sha256": "81bde96332770b27eba54fb0de2dcac62eb3d4f464abfa371bf77342cc6561e4"
+    },
+    {
+      "path": "paper/figure3_robust_layers.png",
+      "bytes": 75907,
+      "sha256": "6108fc10a792ebdf067ff44f54c967a4e20b8b057f758dccec06babd966fd504"
+    },
+    {
+      "path": "paper/figure4_r2.png",
+      "bytes": 62476,
+      "sha256": "07fa7a4e0a60a22df6e54ebd6f770d3f8733b8388f11db8576d8ec34c96447d7"
+    },
+    {
+      "path": "paper/figure5_cross_size_corr.png",
+      "bytes": 50623,
+      "sha256": "26c6538e805338f3ea89254e47b119eb72b220dbf5ecd2843a564d402c2e8f89"
+    },
+    {
+      "path": "paper/main.tex",
+      "bytes": 22894,
+      "sha256": "cec5845d6f15c13b03f6400d050989b44891a9dfa48deb0571e81e1195d49622"
     },
     {
       "path": "provenance/identity.json",
-      "bytes": 400,
-      "sha256": "83822a5ba1e8841cbbb1560f06a17aeb20016743a68caecaab7f07f93e9831f1"
+      "bytes": 505,
+      "sha256": "f50a23dc8b2518e8e5854914cea54a685ae7f2609f88456e1b9cb84eb02cc55b"
     },
     {
       "path": "provenance/secret-scan.json",
@@ -459,8 +499,8 @@
     },
     {
       "path": "provenance/software-verification.json",
-      "bytes": 1547,
-      "sha256": "8b64c0774824711f93596bebcf3601737acb0b989fbd821face78d34ff1f9abf"
+      "bytes": 1599,
+      "sha256": "24bcb300cd6d46240172d4c43a1cbc68f83454a6dbd0427cbec0cc35fbdd42e6"
     },
     {
       "path": "provenance/source-export.json",
