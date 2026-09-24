@@ -26,9 +26,9 @@
   internal submission notes, whose author-check instructions are obsolete.
   Manual references remain in `main.tex`.
   No reference PDF was present in the supplied archive.
-- Final analysis/release tag: **not created**. The intended `v0.1.0-paper` tag
-  awaits final release review and completed hosted checks.
-  No tag hash is fabricated or inferred from a preparation commit.
+- Release target: this finalized publication commit. The annotated
+  `v0.1.0-paper` tag is created only after all final checks pass.
+  The tag object and its target commit are recorded by Git when the tag is created.
 
 The public tree is a selected source snapshot with new paper-facing documentation
 and portable analysis entry points. Statistical arithmetic and resampling order

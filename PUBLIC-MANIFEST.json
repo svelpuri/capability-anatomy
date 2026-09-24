@@ -44,13 +44,13 @@
     },
     {
       "path": "PROVENANCE.md",
-      "bytes": 3090,
-      "sha256": "bc7d52bff8581634076476bde2630c16979344004c1c36da5824d5741f60d21f"
+      "bytes": 3102,
+      "sha256": "b78839a3341a4420369640d78659a4399d6369cee9a2f498b86e46b92aa337b7"
     },
     {
       "path": "PUBLIC_RELEASE_AUDIT.md",
-      "bytes": 6948,
-      "sha256": "290e7993e17092ec8f4b2d624e22d84542014b2e686397efa2f11bbe0c25b4fc"
+      "bytes": 7126,
+      "sha256": "8d5b7258231959f099c3d0e9e7dce2f81eb78b38b45fd5e05cbb4644c553079c"
     },
     {
       "path": "README.md",
@@ -369,8 +369,8 @@
     },
     {
       "path": "docs/release.md",
-      "bytes": 2170,
-      "sha256": "08d145ea615ac62a3fc3d18c823289ab136332cf7dcb1f190b9b0d6b4405b934"
+      "bytes": 2138,
+      "sha256": "bd00d5f6436caed7c2df42d2ad147e5a52b6104720dd6847b828a25e008d1f73"
     },
     {
       "path": "docs/research-limits.md",
@@ -484,8 +484,8 @@
     },
     {
       "path": "provenance/identity.json",
-      "bytes": 505,
-      "sha256": "f50a23dc8b2518e8e5854914cea54a685ae7f2609f88456e1b9cb84eb02cc55b"
+      "bytes": 489,
+      "sha256": "8842ddcbff657f06e608aa70048602374c515ef376807edf24d23fe307cb3f78"
     },
     {
       "path": "provenance/secret-scan.json",

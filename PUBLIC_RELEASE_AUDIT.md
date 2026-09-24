@@ -1,11 +1,10 @@
 # Public research snapshot audit
 
-**Status: manuscript imported unchanged; repository remains private pending final release review.**
+**Status: the release artifact has passed final review and is ready for publication.**
 The selected authoritative archive contents are LaTeX with manual references
 and five PNG figures/diagrams. These six files are preserved byte-for-byte;
 no separate bibliography file is required. Compilation and hosted checks are
 tracked separately from source preservation.
-The `v0.1.0-paper` tag has not been created.
 
 - Source commit: `6e3ab58739857f46c971342a89c34d71445c003f`.
 - Analysis commit: `9c90e4c`.
@@ -46,8 +45,8 @@ The `v0.1.0-paper` tag has not been created.
 
 No private monorepo Git history is included.
 
-No repository visibility change is authorized by this preparation. Publication
-requires a separate explicit approval after final review.
+Publication readiness describes the artifact contents; repository visibility is
+managed separately. This audit does not assert that the repository is public.
 
 ## Review and verification scope
 
@@ -78,9 +77,11 @@ suites passed 647 tests in normal order and 647 in reverse order, zero skips.
 Hosted paper, Ubuntu acceptance and macOS acceptance jobs all passed in
 [workflow run 35867548935](https://github.com/svelpuri/capability-anatomy/actions/runs/35867548935).
 The paper job checks integrity, numerical reproduction and two-pass pdflatex
-compilation with shell escape disabled. The submission-notes cleanup reruns these
-checks; its current result is tracked on the PR rather than inferred from the
-previous commit.
+compilation with shell escape disabled. The submission-notes cleanup at
+`53c62ba7be72cc62e21581b8561c6ff541d3217a` also passed all hosted jobs in
+[workflow run 35910339795](https://github.com/svelpuri/capability-anatomy/actions/runs/35910339795).
+Each publication commit is verified separately; the corresponding CI run records
+its results without treating an earlier commit as a substitute.
 
 The first hosted paper run exposed R-CI-01: an architecture-specific bootstrap
 binary hash was incorrectly required for numerical reproduction. Downloaded

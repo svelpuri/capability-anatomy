@@ -1,7 +1,7 @@
 # Build and qualify a source release
 
-Use a reviewed checkout and a new destination outside it. The private development
-repository must stay private; publish only the reviewed snapshot without history.
+Use a reviewed checkout and a new destination outside it. Distribute only the
+reviewed source selection and its verified artifacts.
 A successful build is not publication approval or scientific evidence.
 
 ```sh

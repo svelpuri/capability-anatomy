@@ -3,7 +3,7 @@
   "analysis_commit": "9c90e4c9cc360c2d26c62ff6cbc52b0f14527fbe",
   "export_timestamp": "2026-09-23T12:34:31.882033+00:00",
   "initial_target_commit": "c6f45bf",
-  "status": "manuscript_imported_private_ci_verification",
+  "status": "finalized_release_candidate",
   "release_tag": null,
   "release_tag_hash": null,
   "snapshot_prepared_timestamp": "2026-09-23T12:43:33.949448+00:00",
