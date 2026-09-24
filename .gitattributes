@@ -1,0 +1,3 @@
+# Keep historical numeric bytes and generated SVG path whitespace.
+analysis/*.csv -text -whitespace
+figures/*.svg -text -whitespace

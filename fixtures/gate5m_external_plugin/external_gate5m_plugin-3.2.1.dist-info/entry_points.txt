@@ -1,0 +1,5 @@
+[capability_anatomy.models]
+external.fixture-model = external_gate5m_plugin:ExternalModelPlugin
+
+[capability_anatomy.runtimes]
+external.fixture-runtime = external_gate5m_plugin:ExternalRuntimePlugin

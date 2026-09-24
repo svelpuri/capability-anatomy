@@ -1,0 +1,54 @@
+{
+  "schema_version": "capability-anatomy/manuscript-import/v1",
+  "archive": "Layerwise_Behavioral_Sensitivity_LLMs_arXiv_candidate_source.tar.gz",
+  "archive_sha256": "9d46c62f8fe759d81f54ba65f05c529a0fe588b358ddd985fa895bfe84579d4c",
+  "files": [
+    {
+      "path": "main.tex",
+      "bytes": 22894,
+      "sha256": "cec5845d6f15c13b03f6400d050989b44891a9dfa48deb0571e81e1195d49622",
+      "transformation": "none"
+    },
+    {
+      "path": "figure4_r2.png",
+      "bytes": 62476,
+      "sha256": "07fa7a4e0a60a22df6e54ebd6f770d3f8733b8388f11db8576d8ec34c96447d7",
+      "transformation": "none"
+    },
+    {
+      "path": "figure1_workflow.png",
+      "bytes": 123487,
+      "sha256": "28d5e1745f19426a46dac877a9b75d23f5772198830d02987dcd9673009e6d3a",
+      "transformation": "none"
+    },
+    {
+      "path": "figure3_robust_layers.png",
+      "bytes": 75907,
+      "sha256": "6108fc10a792ebdf067ff44f54c967a4e20b8b057f758dccec06babd966fd504",
+      "transformation": "none"
+    },
+    {
+      "path": "figure5_cross_size_corr.png",
+      "bytes": 50623,
+      "sha256": "26c6538e805338f3ea89254e47b119eb72b220dbf5ecd2843a564d402c2e8f89",
+      "transformation": "none"
+    },
+    {
+      "path": "figure2_claim_boundary.png",
+      "bytes": 89563,
+      "sha256": "81bde96332770b27eba54fb0de2dcac62eb3d4f464abfa371bf77342cc6561e4",
+      "transformation": "none"
+    }
+  ],
+  "references": "Manual thebibliography environment retained byte-for-byte in main.tex; no BibTeX conversion.",
+  "reference_pdf_in_archive": false,
+  "scope": "Byte-exact manuscript and figure selection from the authoritative archive; obsolete internal submission notes excluded. Not a scientific or bibliographic fact-check.",
+  "excluded_files": [
+    {
+      "path": "ARXIV_SUBMISSION_NOTES.txt",
+      "bytes": 1595,
+      "sha256": "214262ab99e29bf7753e529f5edd8e79c13cc6df600c0bebd52243908288b7ad",
+      "reason": "Obsolete internal author-check instructions; not required for manuscript compilation or numerical reproduction."
+    }
+  ]
+}

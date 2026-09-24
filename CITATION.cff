@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this software or the retained research measurements, please cite Capability Anatomy."
+type: software
+title: "Capability Anatomy"
+authors:
+  - given-names: Srinivas
+    family-names: Velpuri
+    affiliation: Andyur AI
+    email: svelpuri@andyur.ai
+    orcid: "https://orcid.org/0009-0005-8111-2622"
+repository-code: "https://github.com/svelpuri/capability-anatomy"
+license: Apache-2.0
+version: 0.1.0

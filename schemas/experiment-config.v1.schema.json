@@ -1,0 +1,102 @@
+{
+  "$id": "https://capability-anatomy.org/schemas/experiment-config.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "credentials": {
+      "type": "object",
+      "propertyNames": {"pattern": "^[a-z][a-z0-9_]{0,63}$"},
+      "additionalProperties": {
+        "type": "object", "additionalProperties": false,
+        "required": ["provider", "name"],
+        "properties": {
+          "provider": {"const": "env"},
+          "name": {"type": "string", "pattern": "^[A-Za-z_][A-Za-z0-9_]{0,127}$"}
+        }
+      }
+    },
+    "capability": {
+      "additionalProperties": false,
+      "properties": {
+        "collateral_metrics": {"items": {"minLength": 1, "type": "string"}, "type": "array", "uniqueItems": true},
+        "evaluation_plugin": {"minLength": 1, "type": "string"},
+        "suite_version": {"oneOf": [{"minLength": 1, "type": "string"}, {"minimum": 1, "type": "integer"}]},
+        "target_metrics": {"items": {"minLength": 1, "type": "string"}, "minItems": 1, "type": "array", "uniqueItems": true}
+      },
+      "required": ["evaluation_plugin", "suite_version", "target_metrics", "collateral_metrics"],
+      "type": "object"
+    },
+    "dataset": {
+      "additionalProperties": false,
+      "properties": {
+        "discovery_partition": {"minLength": 1, "type": "string"},
+        "manifest": {"minLength": 1, "type": "string"},
+        "provider": {"minLength": 1, "type": "string"},
+        "validation_partition": {"minLength": 1, "type": "string"}
+      },
+      "required": ["provider", "manifest", "discovery_partition", "validation_partition"],
+      "type": "object"
+    },
+    "experiment": {
+      "additionalProperties": false,
+      "properties": {
+        "id": {"pattern": "^[a-z0-9][a-z0-9._-]*$", "type": "string"},
+        "seed": {"maximum": 4294967295, "minimum": 0, "type": "integer"}
+      },
+      "required": ["id", "seed"],
+      "type": "object"
+    },
+    "intervention": {
+      "additionalProperties": false,
+      "properties": {
+        "parameters": {"type": "object"},
+        "plugin": {"minLength": 1, "type": "string"}
+      },
+      "required": ["plugin", "parameters"],
+      "type": "object"
+    },
+    "model": {
+      "additionalProperties": false,
+      "properties": {
+        "parameters": {"type": "object"},
+        "plugin": {"minLength": 1, "type": "string"},
+        "revision": {"minLength": 1, "type": "string"},
+        "source": {"minLength": 1, "type": "string"}
+      },
+      "required": ["plugin", "source", "revision", "parameters"],
+      "type": "object"
+    },
+    "output": {
+      "additionalProperties": false,
+      "properties": {
+        "directory": {"minLength": 1, "type": "string"},
+        "prompt_storage": {"enum": ["full", "hash_only"], "type": "string"},
+        "retain_prompts": {"type": "boolean"},
+        "retain_raw_outputs": {"type": "boolean"}
+      },
+      "required": ["directory", "retain_prompts", "retain_raw_outputs", "prompt_storage"],
+      "type": "object"
+    },
+    "policy": {
+      "additionalProperties": false,
+      "properties": {"file": {"minLength": 1, "type": "string"}},
+      "type": "object"
+    },
+    "runtime": {
+      "additionalProperties": false,
+      "properties": {
+        "deterministic": {"type": "boolean"},
+        "executor": {"minLength": 1, "type": "string"},
+        "parameters": {"type": "object"},
+        "randomized_execution_order": {"type": "boolean"},
+        "repetitions": {"minimum": 1, "type": "integer"},
+        "warmup_runs": {"minimum": 0, "type": "integer"}
+      },
+      "required": ["executor", "deterministic", "warmup_runs", "randomized_execution_order", "repetitions", "parameters"],
+      "type": "object"
+    },
+    "schema_version": {"const": "capability-anatomy/experiment-config/v1"}
+  },
+  "required": ["schema_version", "experiment", "model", "runtime", "capability", "dataset", "intervention", "output"],
+  "type": "object"
+}

@@ -1,0 +1,41 @@
+name: Capability Anatomy acceptance
+description: One source and artifact gate, shared by private and standalone workflows.
+inputs:
+  source:
+    description: Source directory relative to the checkout
+    required: true
+runs:
+  using: composite
+  steps:
+    - uses: actions/setup-python@v7
+      with:
+        python-version: '3.12'
+    - uses: astral-sh/setup-uv@v10.0.1
+    - name: Test source, lifecycle and collector
+      shell: bash
+      env:
+        CA_SOURCE: ${{ inputs.source }}
+      run: python "$CA_SOURCE/scripts/ci_acceptance.py" --source "$CA_SOURCE" --artifacts "$GITHUB_WORKSPACE/dist" --work-dir "$RUNNER_TEMP/capability-anatomy-acceptance"
+    - name: Preserve built distributions
+      if: always()
+      uses: actions/upload-artifact@v7
+      with:
+        name: distributions-${{ runner.os }}
+        if-no-files-found: error
+        retention-days: 14
+        path: |
+          ${{ github.workspace }}/dist/*.whl
+          ${{ github.workspace }}/dist/*.tar.gz
+    - name: Preserve acceptance evidence
+      if: always()
+      uses: actions/upload-artifact@v7
+      with:
+        name: acceptance-${{ runner.os }}
+        if-no-files-found: error
+        retention-days: 14
+        path: |
+          ${{ runner.temp }}/capability-anatomy-acceptance/*.log
+          ${{ runner.temp }}/capability-anatomy-acceptance/source/EXPORT-MANIFEST.json
+          ${{ runner.temp }}/capability-anatomy-acceptance/lifecycle/*.log
+          ${{ runner.temp }}/capability-anatomy-acceptance/lifecycle/verification.json
+          ${{ runner.temp }}/capability-anatomy-acceptance/collector-evidence/*

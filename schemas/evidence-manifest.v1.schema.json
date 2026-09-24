@@ -1,0 +1,45 @@
+{
+  "$id": "https://capability-anatomy.org/schemas/evidence-manifest.v1.schema.json",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "artifacts": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bytes": {"minimum": 0, "type": "integer"},
+          "path": {"minLength": 1, "pattern": "^(?!/)(?!.*(?:^|/)\\.\\.(?:/|$)).+$", "type": "string"},
+          "sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+        },
+        "required": ["path", "bytes", "sha256"],
+        "type": "object"
+      },
+      "minItems": 1,
+      "type": "array"
+    },
+    "config_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+    "execution": {
+      "additionalProperties": false,
+      "properties": {
+        "completed_stages": {"items": {"minLength": 1, "type": "string"}, "type": "array", "uniqueItems": true},
+        "state": {"enum": ["complete", "failed", "interrupted"], "type": "string"}
+      },
+      "required": ["state", "completed_stages"],
+      "type": "object"
+    },
+    "policy_result": {
+      "additionalProperties": false,
+      "properties": {
+        "policy_id": {"minLength": 1, "type": "string"},
+        "reasons": {"items": {"minLength": 1, "type": "string"}, "type": "array"},
+        "status": {"enum": ["PASS", "FAIL", "INVALID"], "type": "string"}
+      },
+      "required": ["policy_id", "status", "reasons"],
+      "type": "object"
+    },
+    "run_id": {"minLength": 1, "type": "string"},
+    "schema_version": {"const": "capability-anatomy/evidence-manifest/v1"}
+  },
+  "required": ["schema_version", "run_id", "config_sha256", "execution", "artifacts"],
+  "type": "object"
+}

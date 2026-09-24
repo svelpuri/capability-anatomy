@@ -1,0 +1,9 @@
+{
+  "model": "0.6",
+  "historical_configuration": "../../artifacts/qwen3-0.6b/configuration.json",
+  "configuration_sha256": "6f3de95a9d7d7fd6a92eaf2e643101af69b1768f7d137c9a015a2e63c70c370c",
+  "historical_protocol": "../../artifacts/qwen3-0.6b/protocol.json",
+  "protocol_sha256": "ba4d72cdbdacc93132ab57c38bf41bbbd6d6aeec939ad97d8565ba800de548e3",
+  "executable": false,
+  "note": "Frozen identity only. Relative locators inside historical metadata are preserved as evidence; they are not runnable public paths."
+}

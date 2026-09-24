@@ -1,0 +1,111 @@
+{
+  "schema_version": "capability-anatomy/paper-evidence-projection/v1",
+  "scope": "Byte-preserved paper observations and identity metadata; not a complete historical run or approval record.",
+  "original_evidence_manifest_sha256": "9a1ee6ebbfe033830bd7a8d3431cd7693ca727d3649d7cde78f4afff4d61fed6",
+  "files": [
+    {
+      "path": "observations.jsonl",
+      "bytes": 2699218,
+      "sha256": "d63eaccb864c70c599e4a91a0be31cf775700c6085df2548b175cd3f8c371443",
+      "transformation": "none"
+    },
+    {
+      "path": "metrics.json",
+      "bytes": 162326,
+      "sha256": "827790fe9f1288883f7490041e6350654f89fb016aa706ec7afad10aeb7e5e12",
+      "transformation": "none"
+    },
+    {
+      "path": "protocol.json",
+      "bytes": 5950,
+      "sha256": "54e101e4ba3fd3db575fa61ec20ff5d8829c5fa2939d4337b6ab4c05ef1f9304",
+      "transformation": "none"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 557,
+      "sha256": "be6dd56d8eca64620062ceb81e47bc94577bce89eac002be9bba4a92aa3c2439",
+      "transformation": "none"
+    },
+    {
+      "path": "record-plan.json",
+      "bytes": 16390,
+      "sha256": "59edc6c23596c9602d97db2e7c4baddffb166dce29213fcc18fb0d626ea7f2a4",
+      "transformation": "none"
+    },
+    {
+      "path": "configuration.json",
+      "bytes": 1270,
+      "sha256": "acf1a9b5a756777f2ad0812c02ea09957f2284957d526d382af3434098d23d3f",
+      "transformation": "none"
+    },
+    {
+      "path": "compatibility.json",
+      "bytes": 12795,
+      "sha256": "a455290f348012ff5c1eb21d59d42f3c64c1ad7cc11b6be0ccd91fa7b9568020",
+      "transformation": "none"
+    },
+    {
+      "path": "controls.json",
+      "bytes": 4885,
+      "sha256": "e63e93cd3a6addaae65166ae0d962eb0dda2c3b89ea836ee3a64d18a6e6184c4",
+      "transformation": "none"
+    },
+    {
+      "path": "candidates.json",
+      "bytes": 6381,
+      "sha256": "d3e0b2ee4160c3b2f427fa52bb7a7e636a5fa4e76f2392c7b4da0cb2a32ef884",
+      "transformation": "none"
+    },
+    {
+      "path": "discovery-ranking.json",
+      "bytes": 6381,
+      "sha256": "d3e0b2ee4160c3b2f427fa52bb7a7e636a5fa4e76f2392c7b4da0cb2a32ef884",
+      "transformation": "none"
+    },
+    {
+      "path": "component-scan-order.json",
+      "bytes": 673,
+      "sha256": "f45e190815755e7433d0eb30a7fd058c834afc60cc53acf1b8ae425c3f7ee45c",
+      "transformation": "none"
+    },
+    {
+      "path": "discovery-task-plan.json",
+      "bytes": 4387,
+      "sha256": "31b6b7e5e66be8c3391b6bddb481cfb5807c917520dc9ff9d58a8e423ee2ddbc",
+      "transformation": "none"
+    },
+    {
+      "path": "validation-task-plan.json",
+      "bytes": 73,
+      "sha256": "aba0d11c7396cb67fcd564dea6b4bcd72c9094b70905b08a178553162ab39229",
+      "transformation": "none"
+    },
+    {
+      "path": "report.json",
+      "bytes": 121474,
+      "sha256": "f87df57855e7c29e33ceb88765ee95ef04a23cfd6aa719d313b93824c4bcdfbd",
+      "transformation": "none"
+    },
+    {
+      "path": "validation.json",
+      "bytes": 96,
+      "sha256": "b671e2266c74914f95f2a8211836ce2b945608c35dda8f46445f0bf8e267fcf0",
+      "transformation": "none"
+    },
+    {
+      "path": "topology.json",
+      "bytes": 9647,
+      "sha256": "cac863b80948d2ea17bcf1df98130ddbf6b6dc3841a29f7b7680de936d4dfd97",
+      "transformation": "none"
+    }
+  ],
+  "excluded": [
+    "task caches",
+    "execution traces",
+    "budget and run states",
+    "duplicate Markdown report",
+    "original evidence manifest containing private review links"
+  ],
+  "verification_scope": "Public file integrity and numerical reconstruction. Does not certify original execution or authorization."
+}
